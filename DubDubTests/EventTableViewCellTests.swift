@@ -39,7 +39,8 @@ class EventTableViewCellTests: XCTestCase {
 	}
 	
 	func testCellHasHeaderImageView() {
-		guard let imageView = cell.headerImageView else { return XCTFail("Cell should have a headerImageView")
+		guard let imageView = cell.headerImageView else {
+			return XCTFail("Cell should have a headerImageView")
 		}
 		
 		XCTAssertFalse(imageView.isHidden, "Cell's header image view should not be hidden")
@@ -48,7 +49,8 @@ class EventTableViewCellTests: XCTestCase {
 	}
 	
 	func testCellHasFavoriteImageView() {
-		guard let imageView = cell.favoriteImageView else { return XCTFail("Cell should have a favorite image view")
+		guard let imageView = cell.favoriteImageView else {
+			return XCTFail("Cell should have a favorite image view")
 		}
 		
 		XCTAssertTrue(imageView.isHidden, "Cell's favorite image view should be hidden by default")

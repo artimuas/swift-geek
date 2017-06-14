@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60DB6D91EF1D5B500959010 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D11EF1D5B500959010 /* Event+CoreDataClass.swift */; };
+		A60DB6DA1EF1D5B500959010 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D21EF1D5B500959010 /* Event+CoreDataProperties.swift */; };
+		A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D31EF1D5B500959010 /* Venue+CoreDataClass.swift */; };
+		A60DB6DC1EF1D5B500959010 /* Venue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D41EF1D5B500959010 /* Venue+CoreDataProperties.swift */; };
+		A60DB6DD1EF1D5B500959010 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D51EF1D5B500959010 /* Address+CoreDataClass.swift */; };
+		A60DB6DE1EF1D5B500959010 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D61EF1D5B500959010 /* Address+CoreDataProperties.swift */; };
+		A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D71EF1D5B500959010 /* Location+CoreDataClass.swift */; };
+		A60DB6E01EF1D5B500959010 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D81EF1D5B500959010 /* Location+CoreDataProperties.swift */; };
+		A60DB6E21EF1D63C00959010 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */; };
+		A60DB6E61EF1D6F500959010 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6E51EF1D6F500959010 /* CoreDataStack.swift */; };
 		A638758A1EE765B800A80E75 /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63875891EE765B800A80E75 /* EventsListViewController.swift */; };
 		A638758D1EE7665300A80E75 /* EventsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */; };
 		A64AEA0E1EE9C26C000DF931 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AEA0D1EE9C26C000DF931 /* EventDetailsViewController.swift */; };
@@ -48,6 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60DB6D11EF1D5B500959010 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60DB6D21EF1D5B500959010 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60DB6D31EF1D5B500959010 /* Venue+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60DB6D41EF1D5B500959010 /* Venue+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60DB6D51EF1D5B500959010 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60DB6D61EF1D5B500959010 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60DB6D71EF1D5B500959010 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A60DB6D81EF1D5B500959010 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
+		A60DB6E51EF1D6F500959010 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A63875891EE765B800A80E75 /* EventsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
 		A638758B1EE7665200A80E75 /* DubDubTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DubDubTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewControllerTests.swift; sourceTree = "<group>"; };
@@ -103,6 +123,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A60DB6E31EF1D6CD00959010 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				A60DB6E51EF1D6F500959010 /* CoreDataStack.swift */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		A60DB6E41EF1D6D300959010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A60DB6D51EF1D5B500959010 /* Address+CoreDataClass.swift */,
+				A60DB6D61EF1D5B500959010 /* Address+CoreDataProperties.swift */,
+				A60DB6D11EF1D5B500959010 /* Event+CoreDataClass.swift */,
+				A60DB6D21EF1D5B500959010 /* Event+CoreDataProperties.swift */,
+				A60DB6D71EF1D5B500959010 /* Location+CoreDataClass.swift */,
+				A60DB6D81EF1D5B500959010 /* Location+CoreDataProperties.swift */,
+				A60DB6D31EF1D5B500959010 /* Venue+CoreDataClass.swift */,
+				A60DB6D41EF1D5B500959010 /* Venue+CoreDataProperties.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A638758E1EE7667200A80E75 /* ViewControlles */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,14 +179,13 @@
 		A65A59511EE72BEB00E29643 /* DubDub */ = {
 			isa = PBXGroup;
 			children = (
+				A65A59611EE72BEB00E29643 /* Info.plist */,
 				A65A59521EE72BEB00E29643 /* AppDelegate.swift */,
 				A6F844C51EF0D60200829E14 /* Assets.xcassets */,
 				A67834CC1EF0636700B4D06C /* CustomViews */,
-				A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */,
-				A65A59611EE72BEB00E29643 /* Info.plist */,
 				A65A595E1EE72BEB00E29643 /* LaunchScreen.storyboard */,
 				A65A59561EE72BEB00E29643 /* Main.storyboard */,
-				A67A0DDB1EF1BDA10006A9D6 /* Model */,
+				A67A0DDB1EF1BDA10006A9D6 /* Data */,
 				A6AB73C81EE8C76600D425D2 /* Network */,
 				A67A0DC91EF18F0C0006A9D6 /* Protocols */,
 				A67A0DD21EF199620006A9D6 /* UIAdditions */,
@@ -155,11 +197,12 @@
 		A65A59691EE72BEB00E29643 /* DubDubTests */ = {
 			isa = PBXGroup;
 			children = (
-				A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */,
+				A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */,
 				A64AEA111EE9C9D9000DF931 /* AppDelegateTests.swift */,
 				A64AEA0F1EE9C28A000DF931 /* EventDetailsViewControllerTests.swift */,
 				A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */,
 				A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */,
+				A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */,
 				A67A0DCE1EF190360006A9D6 /* HeartImageViewTests.swift */,
 				A65A596C1EE72BEB00E29643 /* Info.plist */,
 			);
@@ -201,11 +244,14 @@
 			name = UIAdditions;
 			sourceTree = "<group>";
 		};
-		A67A0DDB1EF1BDA10006A9D6 /* Model */ = {
+		A67A0DDB1EF1BDA10006A9D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */,
+				A60DB6E41EF1D6D300959010 /* Model */,
+				A60DB6E31EF1D6CD00959010 /* Stack */,
 			);
-			name = Model;
+			name = Data;
 			sourceTree = "<group>";
 		};
 		A67A0DDC1EF1BDB10006A9D6 /* Cells */ = {
@@ -364,16 +410,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60DB6DD1EF1D5B500959010 /* Address+CoreDataClass.swift in Sources */,
 				A64AEA0E1EE9C26C000DF931 /* EventDetailsViewController.swift in Sources */,
 				A67A0DCD1EF18FFD0006A9D6 /* HeartImageView.swift in Sources */,
 				A67A0DD61EF19AEA0006A9D6 /* NetworkManager.swift in Sources */,
 				A67A0DD41EF199BB0006A9D6 /* UIBezierPath+Heart.swift in Sources */,
 				A67A0DD11EF196BF0006A9D6 /* HeartDesignable.swift in Sources */,
+				A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */,
+				A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */,
 				A65A59531EE72BEB00E29643 /* AppDelegate.swift in Sources */,
+				A60DB6DA1EF1D5B500959010 /* Event+CoreDataProperties.swift in Sources */,
 				A638758A1EE765B800A80E75 /* EventsListViewController.swift in Sources */,
+				A60DB6E01EF1D5B500959010 /* Location+CoreDataProperties.swift in Sources */,
 				A67A0DD81EF1BBD50006A9D6 /* HeartButton.swift in Sources */,
 				A67834CF1EF0638900B4D06C /* EventTableViewCell.swift in Sources */,
+				A60DB6DE1EF1D5B500959010 /* Address+CoreDataProperties.swift in Sources */,
+				A60DB6E61EF1D6F500959010 /* CoreDataStack.swift in Sources */,
+				A60DB6DC1EF1D5B500959010 /* Venue+CoreDataProperties.swift in Sources */,
 				A65A595B1EE72BEB00E29643 /* DubDub.xcdatamodeld in Sources */,
+				A60DB6D91EF1D5B500959010 /* Event+CoreDataClass.swift in Sources */,
 				A67A0DCB1EF18F1C0006A9D6 /* Designable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +442,7 @@
 				A64AEA121EE9C9D9000DF931 /* AppDelegateTests.swift in Sources */,
 				A638758D1EE7665300A80E75 /* EventsListViewControllerTests.swift in Sources */,
 				A67A0DDA1EF1BCA30006A9D6 /* HeartButtonTests.swift in Sources */,
+				A60DB6E21EF1D63C00959010 /* CoreDataStackTests.swift in Sources */,
 				A67A0DCF1EF190360006A9D6 /* HeartImageViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
