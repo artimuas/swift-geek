@@ -16,7 +16,16 @@ class CoreDataStack: NSObject {
 	private override init() {}
 	
 	lazy var persistentContainer: NSPersistentContainer? = {
-		return nil
+		let container = NSPersistentContainer(name: "DubDub")
+		
+		container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+			
+			if let error = error as NSError? {
+				fatalError("Unresolved error \(error), \(error.userInfo)")
+			}
+		})
+		
+		return container
 	}()
 	
 }

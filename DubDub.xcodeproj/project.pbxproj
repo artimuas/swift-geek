@@ -36,6 +36,8 @@
 		A67A0DD61EF19AEA0006A9D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD51EF19AEA0006A9D6 /* NetworkManager.swift */; };
 		A67A0DD81EF1BBD50006A9D6 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */; };
 		A67A0DDA1EF1BCA30006A9D6 /* HeartButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */; };
+		A6E102B11EF2F4380039DCD1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E102B01EF2F4380039DCD1 /* APIManager.swift */; };
+		A6E102B31EF2F44E0039DCD1 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */; };
 		A6F844C61EF0D60200829E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F844C51EF0D60200829E14 /* Assets.xcassets */; };
 		A6F844C81EF0DB5A00829E14 /* EventTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		A67A0DD51EF19AEA0006A9D6 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButtonTests.swift; sourceTree = "<group>"; };
+		A6E102B01EF2F4380039DCD1 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 		A6F844C51EF0D60200829E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,8 +201,9 @@
 		A65A59691EE72BEB00E29643 /* DubDubTests */ = {
 			isa = PBXGroup;
 			children = (
-				A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */,
+				A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */,
 				A64AEA111EE9C9D9000DF931 /* AppDelegateTests.swift */,
+				A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */,
 				A64AEA0F1EE9C28A000DF931 /* EventDetailsViewControllerTests.swift */,
 				A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */,
 				A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */,
@@ -267,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				A67A0DD51EF19AEA0006A9D6 /* NetworkManager.swift */,
+				A6E102B01EF2F4380039DCD1 /* APIManager.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				A67A0DD61EF19AEA0006A9D6 /* NetworkManager.swift in Sources */,
 				A67A0DD41EF199BB0006A9D6 /* UIBezierPath+Heart.swift in Sources */,
 				A67A0DD11EF196BF0006A9D6 /* HeartDesignable.swift in Sources */,
+				A6E102B11EF2F4380039DCD1 /* APIManager.swift in Sources */,
 				A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */,
 				A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */,
 				A65A59531EE72BEB00E29643 /* AppDelegate.swift in Sources */,
@@ -437,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E102B31EF2F44E0039DCD1 /* APIManagerTests.swift in Sources */,
 				A6F844C81EF0DB5A00829E14 /* EventTableViewCellTests.swift in Sources */,
 				A64AEA101EE9C28A000DF931 /* EventDetailsViewControllerTests.swift in Sources */,
 				A64AEA121EE9C9D9000DF931 /* AppDelegateTests.swift in Sources */,
