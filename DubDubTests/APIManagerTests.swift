@@ -10,27 +10,19 @@ import XCTest
 @testable import DubDub
 
 class APIManagerTests: XCTestCase {
-	
-	var seatGeekAPI: APIManager!
     
     override func setUp() {
         super.setUp()
-	
-		seatGeekAPI = APIManager()
     }
     
-    override func tearDown() {
-		seatGeekAPI = nil
-		
+    override func tearDown() {		
         super.tearDown()
     }
-	
-	func testCanCreateSeatGeekAPIManager() {
-		XCTAssertNotNil(seatGeekAPI, "Should be able to instantiate a SeatGeekAPIManager")
-	}
-	
-	func testAPIManagerCanCreateURLToGivenEndpoint() {
 		
+	func testAPIManagerCanCreateURLToGivenEndpoint() {
+        let testURL = URL(string: "https://api.seatgeek.com/2/events?client_id=Nzc3NDQwMnwxNDk2ODcwMjI0LjUx&type=mlb&page=0")
+        let eventsURL = APIManager.eventsURL 
+		XCTAssertEqual(testURL, eventsURL, "APIManager should create the appropriate URL for events endpoint")
 	}
 	
 }
