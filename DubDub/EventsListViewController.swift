@@ -19,11 +19,6 @@ class EventsListViewController: UITableViewController {
 		
 		let nib = UINib(nibName: EventTableViewCell.identifier, bundle: Bundle(for: EventsListViewController.self))
 		tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
-        
-        let service = APIService()
-        service.getEventsFor(query: "Texas", onPage: 1) { (result) in
-            
-        }
     }
 	
 	func setupSearchController() {

@@ -11,5 +11,9 @@ import CoreData
 
 
 public class Event: NSManagedObject {
+	
+	func parseFrom(json: [String: AnyObject]) {
+		
+	}
 
 }

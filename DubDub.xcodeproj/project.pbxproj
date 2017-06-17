@@ -18,6 +18,11 @@
 		A60DB6E21EF1D63C00959010 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */; };
 		A60DB6E61EF1D6F500959010 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6E51EF1D6F500959010 /* CoreDataStack.swift */; };
 		A60DBCFD1EF36BF80004D33E /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DBCFC1EF36BF80004D33E /* Array+Additions.swift */; };
+		A619113D1EF4758000DF7BBB /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619113C1EF4758000DF7BBB /* Parsable.swift */; };
+		A619113F1EF4A12500DF7BBB /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619113E1EF4A12500DF7BBB /* EventTests.swift */; };
+		A61911411EF4A50100DF7BBB /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61911401EF4A50100DF7BBB /* VenueTests.swift */; };
+		A61911431EF4A50D00DF7BBB /* AddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61911421EF4A50D00DF7BBB /* AddressTests.swift */; };
+		A61911451EF4A51800DF7BBB /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61911441EF4A51800DF7BBB /* LocationTests.swift */; };
 		A638758A1EE765B800A80E75 /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63875891EE765B800A80E75 /* EventsListViewController.swift */; };
 		A638758D1EE7665300A80E75 /* EventsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */; };
 		A63E06691EF37AD00093C487 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E06681EF37AD00093C487 /* APIServiceTests.swift */; };
@@ -38,6 +43,9 @@
 		A67A0DD61EF19AEA0006A9D6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD51EF19AEA0006A9D6 /* APIService.swift */; };
 		A67A0DD81EF1BBD50006A9D6 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */; };
 		A67A0DDA1EF1BCA30006A9D6 /* HeartButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */; };
+		A69623CA1EF4509B00A3869F /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = A69623C91EF4509B00A3869F /* sample.json */; };
+		A69623CC1EF454B800A3869F /* EventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69623CB1EF454B800A3869F /* EventParser.swift */; };
+		A69623CE1EF454D800A3869F /* EventParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69623CD1EF454D800A3869F /* EventParserTests.swift */; };
 		A6E102B11EF2F4380039DCD1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E102B01EF2F4380039DCD1 /* APIManager.swift */; };
 		A6E102B31EF2F44E0039DCD1 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */; };
 		A6F844C61EF0D60200829E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F844C51EF0D60200829E14 /* Assets.xcassets */; };
@@ -73,6 +81,11 @@
 		A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
 		A60DB6E51EF1D6F500959010 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A60DBCFC1EF36BF80004D33E /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
+		A619113C1EF4758000DF7BBB /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		A619113E1EF4A12500DF7BBB /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		A61911401EF4A50100DF7BBB /* VenueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTests.swift; sourceTree = "<group>"; };
+		A61911421EF4A50D00DF7BBB /* AddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTests.swift; sourceTree = "<group>"; };
+		A61911441EF4A51800DF7BBB /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		A63875891EE765B800A80E75 /* EventsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
 		A638758B1EE7665200A80E75 /* DubDubTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DubDubTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsListViewControllerTests.swift; sourceTree = "<group>"; };
@@ -100,6 +113,9 @@
 		A67A0DD51EF19AEA0006A9D6 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButtonTests.swift; sourceTree = "<group>"; };
+		A69623C91EF4509B00A3869F /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		A69623CB1EF454B800A3869F /* EventParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventParser.swift; sourceTree = "<group>"; };
+		A69623CD1EF454D800A3869F /* EventParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventParserTests.swift; sourceTree = "<group>"; };
 		A6E102B01EF2F4380039DCD1 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 		A6F844C51EF0D60200829E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,16 +221,22 @@
 		A65A59691EE72BEB00E29643 /* DubDubTests */ = {
 			isa = PBXGroup;
 			children = (
+				A61911441EF4A51800DF7BBB /* LocationTests.swift */,
+				A61911421EF4A50D00DF7BBB /* AddressTests.swift */,
+				A61911401EF4A50100DF7BBB /* VenueTests.swift */,
+				A619113E1EF4A12500DF7BBB /* EventTests.swift */,
+				A65A596C1EE72BEB00E29643 /* Info.plist */,
 				A6E102B21EF2F44E0039DCD1 /* APIManagerTests.swift */,
 				A63E06681EF37AD00093C487 /* APIServiceTests.swift */,
 				A64AEA111EE9C9D9000DF931 /* AppDelegateTests.swift */,
 				A60DB6E11EF1D63C00959010 /* CoreDataStackTests.swift */,
 				A64AEA0F1EE9C28A000DF931 /* EventDetailsViewControllerTests.swift */,
+				A69623CD1EF454D800A3869F /* EventParserTests.swift */,
 				A638758C1EE7665300A80E75 /* EventsListViewControllerTests.swift */,
 				A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */,
 				A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */,
 				A67A0DCE1EF190360006A9D6 /* HeartImageViewTests.swift */,
-				A65A596C1EE72BEB00E29643 /* Info.plist */,
+				A69623C81EF4501F00A3869F /* SupportingFiles */,
 			);
 			path = DubDubTests;
 			sourceTree = "<group>";
@@ -242,6 +264,7 @@
 			children = (
 				A67A0DCA1EF18F1C0006A9D6 /* Designable.swift */,
 				A67A0DD01EF196BF0006A9D6 /* HeartDesignable.swift */,
+				A619113C1EF4758000DF7BBB /* Parsable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -258,6 +281,7 @@
 		A67A0DDB1EF1BDA10006A9D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A69623CB1EF454B800A3869F /* EventParser.swift */,
 				A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */,
 				A60DB6E41EF1D6D300959010 /* Model */,
 				A60DB6E31EF1D6CD00959010 /* Stack */,
@@ -272,6 +296,14 @@
 				A67834CE1EF0638900B4D06C /* EventTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		A69623C81EF4501F00A3869F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A69623C91EF4509B00A3869F /* sample.json */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		A6AB73C81EE8C76600D425D2 /* Network */ = {
@@ -405,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69623CA1EF4509B00A3869F /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +464,9 @@
 				A6E102B11EF2F4380039DCD1 /* APIManager.swift in Sources */,
 				A60DBCFD1EF36BF80004D33E /* Array+Additions.swift in Sources */,
 				A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */,
+				A69623CC1EF454B800A3869F /* EventParser.swift in Sources */,
 				A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */,
+				A619113D1EF4758000DF7BBB /* Parsable.swift in Sources */,
 				A65A59531EE72BEB00E29643 /* AppDelegate.swift in Sources */,
 				A60DB6DA1EF1D5B500959010 /* Event+CoreDataProperties.swift in Sources */,
 				A638758A1EE765B800A80E75 /* EventsListViewController.swift in Sources */,
@@ -454,12 +489,17 @@
 				A6E102B31EF2F44E0039DCD1 /* APIManagerTests.swift in Sources */,
 				A6F844C81EF0DB5A00829E14 /* EventTableViewCellTests.swift in Sources */,
 				A64AEA101EE9C28A000DF931 /* EventDetailsViewControllerTests.swift in Sources */,
+				A619113F1EF4A12500DF7BBB /* EventTests.swift in Sources */,
+				A61911451EF4A51800DF7BBB /* LocationTests.swift in Sources */,
 				A64AEA121EE9C9D9000DF931 /* AppDelegateTests.swift in Sources */,
 				A638758D1EE7665300A80E75 /* EventsListViewControllerTests.swift in Sources */,
 				A67A0DDA1EF1BCA30006A9D6 /* HeartButtonTests.swift in Sources */,
 				A63E06691EF37AD00093C487 /* APIServiceTests.swift in Sources */,
+				A61911431EF4A50D00DF7BBB /* AddressTests.swift in Sources */,
 				A60DB6E21EF1D63C00959010 /* CoreDataStackTests.swift in Sources */,
+				A61911411EF4A50100DF7BBB /* VenueTests.swift in Sources */,
 				A67A0DCF1EF190360006A9D6 /* HeartImageViewTests.swift in Sources */,
+				A69623CE1EF454D800A3869F /* EventParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

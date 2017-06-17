@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum Result<T> {
-    case success(T)
+enum Result {
+    case success([AnyObject])
     case failure(Error)
 }
 
@@ -21,7 +21,7 @@ class APIService {
         return URLSession(configuration: .default)
     }()
     
-    final func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result<[[String: AnyObject]]>) -> Void) {
+    func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result) -> Void) {
         
         guard let queryString = query else {
             let err = NSError(domain: APIService.errorDomain, code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Query"])
@@ -43,6 +43,9 @@ class APIService {
         let task = session.dataTask(with: request) { (data, response, error) in
             print(data ?? "No data")
             print(response ?? "No response")
+			
+			completion(.success(Array()))
+
         }
         
         task.resume()

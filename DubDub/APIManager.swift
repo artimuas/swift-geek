@@ -17,7 +17,7 @@ struct APIManager {
     static let sharedInstance = APIManager()
 	
 	private static let baseURL = URL(string: "https://api.seatgeek.com/")
-	private static let clientId = "NzcyMjM5NHwxNDk2MzU2NzI5Ljk"
+	private static let clientId = "Nzc3NDQwMnwxNDk2ODcwMjI0LjUx"
     
     static var page: Int = 1
     static var query: String?
@@ -52,10 +52,16 @@ struct APIManager {
 	}
 	
 	static var eventsURL: URL? {
-		return apiURL(to: .events, parameters: [
-            "type": "mlb",
-            "page": page,
-            "q": query ?? NSNull()])
+		get {
+			return APIManager.apiURL(to: .events, parameters: [
+				"type": "mlb",
+				"page": page,
+				"q": query ?? NSNull()]
+			)
+		}
+		set {
+			self.eventsURL = newValue
+		}
 	}
-    
+	
 }

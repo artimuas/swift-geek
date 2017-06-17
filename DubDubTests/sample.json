@@ -1,0 +1,2059 @@
+{
+    "events": [
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-16T19:05:00",
+            "datetime_utc": "2017-06-17T00:05:00",
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/6-16-2017-arlington-texas-globe-life-park/mlb/3592642",
+            "title": "Seattle Mariners at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg",
+                    "home_venue_id": 13,
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C",
+                            "#C4CED4"
+                        ],
+                        "iconic": "#0C2C56"
+                    },
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "id": 13,
+                    "stats": {
+                        "event_count": 94
+                    },
+                    "num_upcoming_events": 94,
+                    "away_team": true,
+                    "score": 0.675483,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Mariners",
+                    "slug": "seattle-mariners",
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "id": 16,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.750377,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Mariners at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 29,
+                "lowest_price_good_deals": 29,
+                "listing_count": 378,
+                "average_price": 77.63,
+                "highest_price": 541
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "id": 1000000,
+                    "name": "sports"
+                },
+                {
+                    "parent_id": 1000000,
+                    "id": 1010000,
+                    "name": "baseball"
+                },
+                {
+                    "parent_id": 1010000,
+                    "id": 1010100,
+                    "name": "mlb"
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "slug": "globe-life-park",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "id": 16,
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "country": "US",
+                "links": [],
+                "score": 0.856116,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "name": "Globe Life Park"
+            },
+            "score": 0.716029,
+            "type": "mlb",
+            "id": 3592642,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-17T04:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-16T19:10:00",
+            "datetime_utc": "2017-06-17T00:10:00",
+            "url": "https://seatgeek.com/red-sox-at-astros-tickets/6-16-2017-houston-texas-minute-maid-park/mlb/3594130",
+            "title": "Boston Red Sox at Houston Astros",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg",
+                    "home_venue_id": 20,
+                    "primary": true,
+                    "url": "https://seatgeek.com/houston-astros-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "all": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "iconic": "#002D62"
+                    },
+                    "name": "Houston Astros",
+                    "stats": {
+                        "event_count": 95
+                    },
+                    "num_upcoming_events": 95,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.655282,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Astros",
+                    "slug": "houston-astros",
+                    "image_attribution": "https://www.flickr.com/photos/royluck/8669306797/in/photolist-ed5sSR-fAoSCB-ed5sJ2-ed5tdX-ed5t6K-edb7ss-mQLvDs-mQLwKf-edb8bm-mQLwhb-7jUr2q-6WFx3G-6WFxc1-6WFogm-8mDxHh-qLQiuZ-qvKb4y-quzb2e-quxKAV-pRjiEQ-qJGMNq-qvL5b1-qvL5Wj-quzj96-quxWXn-quqDaG-qLQgnc-qvKchW-qNf7z9-qLQkmV-qvL4Vb-qLVocW-qvTJ6T-quxE6M-qvL45d-quxRnV-qNaen6-qvKc6J-qvL3vN-qvTLaT-qL2s5d-qNacJX-qJHm35-qurnrA-qNapR2-pQ1syo-quzxgD-qJHHPm-qNf6aL-qNabun",
+                    "id": 20,
+                    "has_upcoming_events": true,
+                    "home_team": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg",
+                    "home_venue_id": 21,
+                    "url": "https://seatgeek.com/boston-red-sox-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "all": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "iconic": "#BD3039"
+                    },
+                    "away_team": true,
+                    "name": "Boston Red Sox",
+                    "stats": {
+                        "event_count": 96
+                    },
+                    "num_upcoming_events": 96,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.782771,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "short_name": "Red Sox",
+                    "slug": "boston-red-sox",
+                    "image_attribution": "https://www.flickr.com/photos/ekilby/14255044913/in/photolist-nHEQdr-eSAsvU-cE7f7U-6ZHec-p4mGwg-6yRFHR-6yRFCk-6yVLuo-6yREJ2-6DQds9-49q4gE-6yREwP-6yRFW4-6yRFtP-eiBdUM-eiBkHx-eiBfKZ-eiBjNZ-eiGYf7-eiH3Hu-eiBjAc-eiBgKr-eiGWTN-eiBeuM-eiBkVV-eiH76m-eiGZHm-eiBg5P-eiBdyt-eiBnbk-eiBjqa-eiBnmr-eiGWH1-eiBe8K-eiBivK-eiBmmF-eiH2BU-eiH33W-eiH3Sh-eiH1yh-eiBgrV-eiGYwA-eiGWFw-eiH4VG-eiBjMp-eiH6X9-eiGWyQ-eiH64A-eiBmJv-eiH3n5",
+                    "id": 21,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Red Sox at Astros",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 30,
+                "lowest_price_good_deals": 30,
+                "listing_count": 355,
+                "average_price": 101.5,
+                "highest_price": 424
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "id": 1000000,
+                    "name": "sports"
+                },
+                {
+                    "parent_id": 1000000,
+                    "id": 1010000,
+                    "name": "baseball"
+                },
+                {
+                    "parent_id": 1010000,
+                    "id": 1010100,
+                    "name": "mlb"
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 45,
+                "slug": "minute-maid-park",
+                "state": "TX",
+                "address": "501 Crawford Street",
+                "postal_code": "77002",
+                "location": {
+                    "lon": -95.3557,
+                    "lat": 29.7562
+                },
+                "name": "Minute Maid Park",
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Minute Maid Park",
+                "country": "US",
+                "links": [],
+                "score": 0.751314,
+                "display_location": "Houston, TX",
+                "url": "https://seatgeek.com/venues/minute-maid-park/tickets",
+                "extended_address": "Houston, TX 77002",
+                "city": "Houston",
+                "id": 20
+            },
+            "score": 0.697369,
+            "type": "mlb",
+            "id": 3594130,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-17T04:10:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-17T16:05:00",
+            "datetime_utc": "2017-06-17T21:05:00",
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/6-17-2017-arlington-texas-globe-life-park/mlb/3592629",
+            "title": "Seattle Mariners at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg",
+                    "home_venue_id": 13,
+                    "name": "Seattle Mariners",
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C",
+                            "#C4CED4"
+                        ],
+                        "iconic": "#0C2C56"
+                    },
+                    "away_team": true,
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 94
+                    },
+                    "num_upcoming_events": 94,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.675483,
+                    "type": "mlb",
+                    "id": 13,
+                    "short_name": "Mariners",
+                    "slug": "seattle-mariners",
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.750377,
+                    "type": "mlb",
+                    "id": 16,
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Mariners at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 13,
+                "lowest_price_good_deals": 13,
+                "listing_count": 2053,
+                "average_price": 59,
+                "highest_price": 541
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "id": 1000000,
+                    "name": "sports"
+                },
+                {
+                    "parent_id": 1000000,
+                    "id": 1010000,
+                    "name": "baseball"
+                },
+                {
+                    "parent_id": 1010000,
+                    "id": 1010100,
+                    "name": "mlb"
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "slug": "globe-life-park",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "name": "Globe Life Park",
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "country": "US",
+                "links": [],
+                "score": 0.856116,
+                "display_location": "Arlington, TX",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "extended_address": "Arlington, TX 76011",
+                "city": "Arlington",
+                "id": 16
+            },
+            "score": 0.727297,
+            "type": "mlb",
+            "id": 3592629,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-18T01:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "announce_date": "2016-11-07T00:00:00",
+            "datetime_utc": "2017-06-18T00:15:00",
+            "is_open": false,
+            "title": "Boston Red Sox at Houston Astros",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg",
+                    "home_venue_id": 20,
+                    "primary": true,
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg"
+                    },
+                    "url": "https://seatgeek.com/houston-astros-tickets",
+                    "colors": {
+                        "primary": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "all": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "iconic": "#002D62"
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "id": 1000000,
+                            "parent_id": null
+                        },
+                        {
+                            "name": "baseball",
+                            "id": 1010000,
+                            "parent_id": 1000000
+                        },
+                        {
+                            "name": "mlb",
+                            "id": 1010100,
+                            "parent_id": 1010000
+                        }
+                    ],
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 95
+                    },
+                    "num_upcoming_events": 95,
+                    "home_team": true,
+                    "score": 0.655282,
+                    "type": "mlb",
+                    "name": "Houston Astros",
+                    "short_name": "Astros",
+                    "slug": "houston-astros",
+                    "image_attribution": "https://www.flickr.com/photos/royluck/8669306797/in/photolist-ed5sSR-fAoSCB-ed5sJ2-ed5tdX-ed5t6K-edb7ss-mQLvDs-mQLwKf-edb8bm-mQLwhb-7jUr2q-6WFx3G-6WFxc1-6WFogm-8mDxHh-qLQiuZ-qvKb4y-quzb2e-quxKAV-pRjiEQ-qJGMNq-qvL5b1-qvL5Wj-quzj96-quxWXn-quqDaG-qLQgnc-qvKchW-qNf7z9-qLQkmV-qvL4Vb-qLVocW-qvTJ6T-quxE6M-qvL45d-quxRnV-qNaen6-qvKc6J-qvL3vN-qvTLaT-qL2s5d-qNacJX-qJHm35-qurnrA-qNapR2-pQ1syo-quzxgD-qJHHPm-qNf6aL-qNabun",
+                    "id": 20,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg",
+                    "home_venue_id": 21,
+                    "url": "https://seatgeek.com/boston-red-sox-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "all": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "iconic": "#BD3039"
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "id": 1000000,
+                            "parent_id": null
+                        },
+                        {
+                            "name": "baseball",
+                            "id": 1010000,
+                            "parent_id": 1000000
+                        },
+                        {
+                            "name": "mlb",
+                            "id": 1010100,
+                            "parent_id": 1010000
+                        }
+                    ],
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 96
+                    },
+                    "num_upcoming_events": 96,
+                    "away_team": true,
+                    "score": 0.782771,
+                    "type": "mlb",
+                    "name": "Boston Red Sox",
+                    "short_name": "Red Sox",
+                    "slug": "boston-red-sox",
+                    "image_attribution": "https://www.flickr.com/photos/ekilby/14255044913/in/photolist-nHEQdr-eSAsvU-cE7f7U-6ZHec-p4mGwg-6yRFHR-6yRFCk-6yVLuo-6yREJ2-6DQds9-49q4gE-6yREwP-6yRFW4-6yRFtP-eiBdUM-eiBkHx-eiBfKZ-eiBjNZ-eiGYf7-eiH3Hu-eiBjAc-eiBgKr-eiGWTN-eiBeuM-eiBkVV-eiH76m-eiGZHm-eiBg5P-eiBdyt-eiBnbk-eiBjqa-eiBnmr-eiGWH1-eiBe8K-eiBivK-eiBmmF-eiH2BU-eiH33W-eiH3Sh-eiH1yh-eiBgrV-eiGYwA-eiGWFw-eiH4VG-eiBjMp-eiH6X9-eiGWyQ-eiH64A-eiBmJv-eiH3n5",
+                    "id": 21,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Red Sox at Astros",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 37,
+                "lowest_price_good_deals": 37,
+                "listing_count": 665,
+                "average_price": 116,
+                "highest_price": 476
+            },
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "id": 1000000,
+                    "parent_id": null
+                },
+                {
+                    "name": "baseball",
+                    "id": 1010000,
+                    "parent_id": 1000000
+                },
+                {
+                    "name": "mlb",
+                    "id": 1010100,
+                    "parent_id": 1010000
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 45,
+                "slug": "minute-maid-park",
+                "state": "TX",
+                "address": "501 Crawford Street",
+                "postal_code": "77002",
+                "location": {
+                    "lon": -95.3557,
+                    "lat": 29.7562
+                },
+                "id": 20,
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Minute Maid Park",
+                "url": "https://seatgeek.com/venues/minute-maid-park/tickets",
+                "links": [],
+                "score": 0.751314,
+                "display_location": "Houston, TX",
+                "city": "Houston",
+                "extended_address": "Houston, TX 77002",
+                "name": "Minute Maid Park",
+                "country": "US"
+            },
+            "score": 0.696879,
+            "type": "mlb",
+            "id": 3594128,
+            "datetime_tbd": false,
+            "datetime_local": "2017-06-17T19:15:00",
+            "url": "https://seatgeek.com/red-sox-at-astros-tickets/6-17-2017-houston-texas-minute-maid-park/mlb/3594128",
+            "links": [],
+            "visible_until_utc": "2017-06-18T04:15:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "announce_date": "2016-11-07T00:00:00",
+            "datetime_utc": "2017-06-18T19:05:00",
+            "is_open": false,
+            "title": "Seattle Mariners at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg",
+                    "home_venue_id": 13,
+                    "name": "Seattle Mariners",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg"
+                    },
+                    "url": "https://seatgeek.com/seattle-mariners-tickets",
+                    "colors": {
+                        "primary": [
+                            "#0C2C56",
+                            "#005C5C"
+                        ],
+                        "all": [
+                            "#0C2C56",
+                            "#005C5C",
+                            "#C4CED4"
+                        ],
+                        "iconic": "#0C2C56"
+                    },
+                    "away_team": true,
+                    "id": 13,
+                    "stats": {
+                        "event_count": 94
+                    },
+                    "num_upcoming_events": 94,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "score": 0.675483,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Mariners",
+                    "slug": "seattle-mariners",
+                    "image_attribution": "https://www.flickr.com/photos/sillygwailo/5622797723/in/photolist-9ySiSk-9ypQsD-oFqMDd-bBpy1Q-9ypsrV-9MTjth-ae5nrj-9yt7Hm-76cmWs-7U7UWL-9yStuB-5aStTs-5rkUv-9yVr9o-9yVtds-9yVvL3-9ySrpi-8RfagD-5AYhAT-HM7Fw-4Q2Gyg-9QFuf8-87yXp3-9QNtXD-4Q2Y6G-6B7nDS-2fsyDo-2fo9EH-4UvQa3-85oVKC-byWa1b-byW6R7-98ZeS1-bMQPJT-98Zczf-98ZavE-98VWZH-98W43B-98W2vR-98Z7rm-98Zfn3-98ZdDm-98W7Sg-98Z8h5-98Z6p3-9yVgWm-9yVhmq-9ySk8k-c7q7pJ-4ToYQ7",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "id": 16,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "score": 0.750377,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Mariners at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 18,
+                "lowest_price_good_deals": 18,
+                "listing_count": 2186,
+                "average_price": 54,
+                "highest_price": 541
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "name": "sports",
+                    "id": 1000000
+                },
+                {
+                    "parent_id": 1000000,
+                    "name": "baseball",
+                    "id": 1010000
+                },
+                {
+                    "parent_id": 1010000,
+                    "name": "mlb",
+                    "id": 1010100
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "slug": "globe-life-park",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "name": "Globe Life Park",
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "links": [],
+                "score": 0.856116,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "id": 16,
+                "country": "US"
+            },
+            "score": 0.724748,
+            "type": "mlb",
+            "id": 3592630,
+            "datetime_tbd": false,
+            "datetime_local": "2017-06-18T14:05:00",
+            "url": "https://seatgeek.com/mariners-at-rangers-tickets/6-18-2017-arlington-texas-globe-life-park/mlb/3592630",
+            "links": [],
+            "visible_until_utc": "2017-06-18T23:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-18T19:08:00",
+            "datetime_utc": "2017-06-19T00:08:00",
+            "url": "https://seatgeek.com/red-sox-at-astros-tickets/6-18-2017-houston-texas-minute-maid-park/mlb/3594126",
+            "title": "Boston Red Sox at Houston Astros",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg",
+                    "home_venue_id": 20,
+                    "primary": true,
+                    "url": "https://seatgeek.com/houston-astros-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/houston-astros-8a908c/20/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "all": [
+                            "#002D62",
+                            "#EB6E1F"
+                        ],
+                        "iconic": "#002D62"
+                    },
+                    "name": "Houston Astros",
+                    "stats": {
+                        "event_count": 95
+                    },
+                    "num_upcoming_events": 95,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "score": 0.655282,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Astros",
+                    "slug": "houston-astros",
+                    "image_attribution": "https://www.flickr.com/photos/royluck/8669306797/in/photolist-ed5sSR-fAoSCB-ed5sJ2-ed5tdX-ed5t6K-edb7ss-mQLvDs-mQLwKf-edb8bm-mQLwhb-7jUr2q-6WFx3G-6WFxc1-6WFogm-8mDxHh-qLQiuZ-qvKb4y-quzb2e-quxKAV-pRjiEQ-qJGMNq-qvL5b1-qvL5Wj-quzj96-quxWXn-quqDaG-qLQgnc-qvKchW-qNf7z9-qLQkmV-qvL4Vb-qLVocW-qvTJ6T-quxE6M-qvL45d-quxRnV-qNaen6-qvKc6J-qvL3vN-qvTLaT-qL2s5d-qNacJX-qJHm35-qurnrA-qNapR2-pQ1syo-quzxgD-qJHHPm-qNf6aL-qNabun",
+                    "id": 20,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg",
+                    "home_venue_id": 21,
+                    "url": "https://seatgeek.com/boston-red-sox-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/boston-red-sox-e8467e/21/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "all": [
+                            "#BD3039",
+                            "#0D2B56"
+                        ],
+                        "iconic": "#BD3039"
+                    },
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "name": "Boston Red Sox",
+                    "stats": {
+                        "event_count": 96
+                    },
+                    "num_upcoming_events": 96,
+                    "away_team": true,
+                    "score": 0.782771,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "short_name": "Red Sox",
+                    "slug": "boston-red-sox",
+                    "image_attribution": "https://www.flickr.com/photos/ekilby/14255044913/in/photolist-nHEQdr-eSAsvU-cE7f7U-6ZHec-p4mGwg-6yRFHR-6yRFCk-6yVLuo-6yREJ2-6DQds9-49q4gE-6yREwP-6yRFW4-6yRFtP-eiBdUM-eiBkHx-eiBfKZ-eiBjNZ-eiGYf7-eiH3Hu-eiBjAc-eiBgKr-eiGWTN-eiBeuM-eiBkVV-eiH76m-eiGZHm-eiBg5P-eiBdyt-eiBnbk-eiBjqa-eiBnmr-eiGWH1-eiBe8K-eiBivK-eiBmmF-eiH2BU-eiH33W-eiH3Sh-eiH1yh-eiBgrV-eiGYwA-eiGWFw-eiH4VG-eiBjMp-eiH6X9-eiGWyQ-eiH64A-eiBmJv-eiH3n5",
+                    "id": 21,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Red Sox at Astros",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 30,
+                "lowest_price_good_deals": 30,
+                "listing_count": 851,
+                "average_price": 115.19,
+                "highest_price": 800
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "name": "sports",
+                    "id": 1000000
+                },
+                {
+                    "parent_id": 1000000,
+                    "name": "baseball",
+                    "id": 1010000
+                },
+                {
+                    "parent_id": 1010000,
+                    "name": "mlb",
+                    "id": 1010100
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 45,
+                "slug": "minute-maid-park",
+                "state": "TX",
+                "address": "501 Crawford Street",
+                "postal_code": "77002",
+                "location": {
+                    "lon": -95.3557,
+                    "lat": 29.7562
+                },
+                "url": "https://seatgeek.com/venues/minute-maid-park/tickets",
+                "id": 20,
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Minute Maid Park",
+                "country": "US",
+                "links": [],
+                "score": 0.751314,
+                "display_location": "Houston, TX",
+                "city": "Houston",
+                "extended_address": "Houston, TX 77002",
+                "name": "Minute Maid Park"
+            },
+            "score": 0.697672,
+            "type": "mlb",
+            "id": 3594126,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-19T04:08:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "announce_date": "2016-11-07T00:00:00",
+            "datetime_utc": "2017-06-20T00:05:00",
+            "is_open": false,
+            "title": "Toronto Blue Jays at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "id": 16,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "score": 0.750468,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg",
+                    "home_venue_id": 17,
+                    "name": "Toronto Blue Jays",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg"
+                    },
+                    "url": "https://seatgeek.com/toronto-blue-jays-tickets",
+                    "colors": {
+                        "primary": [
+                            "#134A8E",
+                            "#1D2D5C"
+                        ],
+                        "all": [
+                            "#134A8E",
+                            "#1D2D5C",
+                            "#E8291C"
+                        ],
+                        "iconic": "#134A8E"
+                    },
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "id": 17,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "away_team": true,
+                    "score": 0.708132,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "short_name": "Blue Jays",
+                    "slug": "toronto-blue-jays",
+                    "image_attribution": "https://www.flickr.com/photos/somethingness/8066457202/in/photolist-dhNGGj-aW3jD-aeCXaz-aeCYiR-aeFEy3-aW2kG-aVZpW-aVaAe-aVo6U-aVbGB-aVceF-aVZJd-aVZme-aVbTf-aVbZC-aVcme-aVf9h-aV4xT-aW1y6-aXjPf-aW39X-aVa9f-aXi9U-aXiAc-aXi15-aV4E8-aXn8K-aXjfN-aXmXu-aXj95-aV4JU-oqhobN-osjkGT-aXhRg-d7FZ8w-ad7aqE-hadzr-nzc2e-ad7PXj-ad7F8C-ad7iKY-ad4J94-ad79o9-ad4vzM-ad4nFZ-ad4Aqn-ad4CLv-ad4EGB-ad7mvo-ad7MkG",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Blue Jays at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 6,
+                "lowest_price_good_deals": 6,
+                "listing_count": 2845,
+                "average_price": 75.81,
+                "highest_price": 1359
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "name": "sports",
+                    "id": 1000000
+                },
+                {
+                    "parent_id": 1000000,
+                    "name": "baseball",
+                    "id": 1010000
+                },
+                {
+                    "parent_id": 1010000,
+                    "name": "mlb",
+                    "id": 1010100
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "slug": "globe-life-park",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "id": 16,
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "links": [],
+                "score": 0.856248,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "name": "Globe Life Park",
+                "country": "US"
+            },
+            "score": 0.734876,
+            "type": "mlb",
+            "id": 3592657,
+            "datetime_tbd": false,
+            "datetime_local": "2017-06-19T19:05:00",
+            "url": "https://seatgeek.com/blue-jays-at-rangers-tickets/6-19-2017-arlington-texas-globe-life-park/mlb/3592657",
+            "links": [],
+            "visible_until_utc": "2017-06-20T04:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-20T19:05:00",
+            "datetime_utc": "2017-06-21T00:05:00",
+            "url": "https://seatgeek.com/blue-jays-at-rangers-tickets/6-20-2017-arlington-texas-globe-life-park/mlb/3592666",
+            "title": "Toronto Blue Jays at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "id": 16,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "score": 0.750377,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg",
+                    "home_venue_id": 17,
+                    "name": "Toronto Blue Jays",
+                    "url": "https://seatgeek.com/toronto-blue-jays-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#134A8E",
+                            "#1D2D5C"
+                        ],
+                        "all": [
+                            "#134A8E",
+                            "#1D2D5C",
+                            "#E8291C"
+                        ],
+                        "iconic": "#134A8E"
+                    },
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "id": 1000000,
+                            "name": "sports"
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "id": 1010000,
+                            "name": "baseball"
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "id": 1010100,
+                            "name": "mlb"
+                        }
+                    ],
+                    "id": 17,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "away_team": true,
+                    "score": 0.708163,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "short_name": "Blue Jays",
+                    "slug": "toronto-blue-jays",
+                    "image_attribution": "https://www.flickr.com/photos/somethingness/8066457202/in/photolist-dhNGGj-aW3jD-aeCXaz-aeCYiR-aeFEy3-aW2kG-aVZpW-aVaAe-aVo6U-aVbGB-aVceF-aVZJd-aVZme-aVbTf-aVbZC-aVcme-aVf9h-aV4xT-aW1y6-aXjPf-aW39X-aVa9f-aXi9U-aXiAc-aXi15-aV4E8-aXn8K-aXjfN-aXmXu-aXj95-aV4JU-oqhobN-osjkGT-aXhRg-d7FZ8w-ad7aqE-hadzr-nzc2e-ad7PXj-ad7F8C-ad7iKY-ad4J94-ad79o9-ad4vzM-ad4nFZ-ad4Aqn-ad4CLv-ad4EGB-ad7mvo-ad7MkG",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Blue Jays at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 6,
+                "lowest_price_good_deals": 6,
+                "listing_count": 3362,
+                "average_price": 41,
+                "highest_price": 1359
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "id": 1000000,
+                    "name": "sports"
+                },
+                {
+                    "parent_id": 1000000,
+                    "id": 1010000,
+                    "name": "baseball"
+                },
+                {
+                    "parent_id": 1010000,
+                    "id": 1010100,
+                    "name": "mlb"
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "slug": "globe-life-park",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "id": 16,
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "country": "US",
+                "links": [],
+                "score": 0.856116,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "name": "Globe Life Park"
+            },
+            "score": 0.736587,
+            "type": "mlb",
+            "id": 3592666,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-21T04:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-21T19:05:00",
+            "datetime_utc": "2017-06-22T00:05:00",
+            "is_open": false,
+            "title": "Toronto Blue Jays at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "name": "Texas Rangers",
+                    "primary": true,
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "id": 16,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "id": 1000000,
+                            "parent_id": null
+                        },
+                        {
+                            "name": "baseball",
+                            "id": 1010000,
+                            "parent_id": 1000000
+                        },
+                        {
+                            "name": "mlb",
+                            "id": 1010100,
+                            "parent_id": 1010000
+                        }
+                    ],
+                    "score": 0.750468,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg",
+                    "home_venue_id": 17,
+                    "name": "Toronto Blue Jays",
+                    "url": "https://seatgeek.com/toronto-blue-jays-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#134A8E",
+                            "#1D2D5C"
+                        ],
+                        "all": [
+                            "#134A8E",
+                            "#1D2D5C",
+                            "#E8291C"
+                        ],
+                        "iconic": "#134A8E"
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "id": 1000000,
+                            "parent_id": null
+                        },
+                        {
+                            "name": "baseball",
+                            "id": 1010000,
+                            "parent_id": 1000000
+                        },
+                        {
+                            "name": "mlb",
+                            "id": 1010100,
+                            "parent_id": 1010000
+                        }
+                    ],
+                    "id": 17,
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "away_team": true,
+                    "score": 0.708132,
+                    "type": "mlb",
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "short_name": "Blue Jays",
+                    "slug": "toronto-blue-jays",
+                    "image_attribution": "https://www.flickr.com/photos/somethingness/8066457202/in/photolist-dhNGGj-aW3jD-aeCXaz-aeCYiR-aeFEy3-aW2kG-aVZpW-aVaAe-aVo6U-aVbGB-aVceF-aVZJd-aVZme-aVbTf-aVbZC-aVcme-aVf9h-aV4xT-aW1y6-aXjPf-aW39X-aVa9f-aXi9U-aXiAc-aXi15-aV4E8-aXn8K-aXjfN-aXmXu-aXj95-aV4JU-oqhobN-osjkGT-aXhRg-d7FZ8w-ad7aqE-hadzr-nzc2e-ad7PXj-ad7F8C-ad7iKY-ad4J94-ad79o9-ad4vzM-ad4nFZ-ad4Aqn-ad4CLv-ad4EGB-ad7mvo-ad7MkG",
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Blue Jays at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 8,
+                "lowest_price_good_deals": 8,
+                "listing_count": 2927,
+                "average_price": 48,
+                "highest_price": 1359
+            },
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "id": 1000000,
+                    "parent_id": null
+                },
+                {
+                    "name": "baseball",
+                    "id": 1010000,
+                    "parent_id": 1000000
+                },
+                {
+                    "name": "mlb",
+                    "id": 1010100,
+                    "parent_id": 1010000
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "slug": "globe-life-park",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "name": "Globe Life Park",
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "country": "US",
+                "links": [],
+                "score": 0.856248,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "id": 16
+            },
+            "score": 0.736395,
+            "type": "mlb",
+            "id": 3592654,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "url": "https://seatgeek.com/blue-jays-at-rangers-tickets/6-21-2017-arlington-texas-globe-life-park/mlb/3592654",
+            "links": [],
+            "visible_until_utc": "2017-06-22T04:05:00"
+        },
+        {
+            "created_at": "2016-11-07T00:00:00",
+            "datetime_local": "2017-06-22T13:05:00",
+            "datetime_utc": "2017-06-22T18:05:00",
+            "url": "https://seatgeek.com/blue-jays-at-rangers-tickets/6-22-2017-arlington-texas-globe-life-park/mlb/3592655",
+            "title": "Toronto Blue Jays at Texas Rangers",
+            "performers": [
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg",
+                    "home_venue_id": 16,
+                    "primary": true,
+                    "url": "https://seatgeek.com/texas-rangers-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/texas-rangers-41ce36/16/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "all": [
+                            "#C0111F",
+                            "#003278"
+                        ],
+                        "iconic": "#C0111F"
+                    },
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-west",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League West",
+                            "display_type": "Division",
+                            "short_name": "AL West"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "home_team": true,
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "score": 0.750468,
+                    "type": "mlb",
+                    "name": "Texas Rangers",
+                    "short_name": "Rangers",
+                    "slug": "texas-rangers",
+                    "image_attribution": "https://www.flickr.com/photos/a4gpa/4591377118/in/photolist-HG1Ar-6G8DGT-6rWf5N-4anGGm-4aiDfH-4anHc1-7ZJ1ss-aqx6nD-aqx3EV-aqzEFA-6G8FCc-aqwYWz-aqzFwq-4anGc7-4aiFUF-4anFM7-aqx2ev-aqzGLy-aqx1Ln-aqzJn7-aqzNg1-6G8EXn-aqx2Xr-8QpUwa-aqx5SK-aqzKS7-aqx53z-aqx1vB-79NEXJ-79JPMZ-aqzHxo-aqx3oH-aqx4wp-aqzGrG-9wjMuE-6LfAWV-6LkckC-6Lnoe1-6LfZbF-6LkiqL-5c1QZw-5c1SmU-5bWBXF-5c1TqQ-5c1VPq-6Lihat-HG1AF-79JQBi-6LhPC6-79JQ8r",
+                    "id": 16,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                },
+                {
+                    "image": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg",
+                    "home_venue_id": 17,
+                    "url": "https://seatgeek.com/toronto-blue-jays-tickets",
+                    "images": {
+                        "huge": "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/toronto-blue-jays-af2075/17/huge.jpg"
+                    },
+                    "colors": {
+                        "primary": [
+                            "#134A8E",
+                            "#1D2D5C"
+                        ],
+                        "all": [
+                            "#134A8E",
+                            "#1D2D5C",
+                            "#E8291C"
+                        ],
+                        "iconic": "#134A8E"
+                    },
+                    "taxonomies": [
+                        {
+                            "parent_id": null,
+                            "name": "sports",
+                            "id": 1000000
+                        },
+                        {
+                            "parent_id": 1000000,
+                            "name": "baseball",
+                            "id": 1010000
+                        },
+                        {
+                            "parent_id": 1010000,
+                            "name": "mlb",
+                            "id": 1010100
+                        }
+                    ],
+                    "divisions": [
+                        {
+                            "slug": null,
+                            "taxonomy_id": 1010100,
+                            "division_level": 1,
+                            "display_name": "American League",
+                            "display_type": "League",
+                            "short_name": null
+                        },
+                        {
+                            "slug": "american-league-east",
+                            "taxonomy_id": 1010100,
+                            "division_level": 2,
+                            "display_name": "American League East",
+                            "display_type": "Division",
+                            "short_name": "AL East"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 97
+                    },
+                    "num_upcoming_events": 97,
+                    "away_team": true,
+                    "score": 0.708132,
+                    "type": "mlb",
+                    "name": "Toronto Blue Jays",
+                    "short_name": "Blue Jays",
+                    "slug": "toronto-blue-jays",
+                    "image_attribution": "https://www.flickr.com/photos/somethingness/8066457202/in/photolist-dhNGGj-aW3jD-aeCXaz-aeCYiR-aeFEy3-aW2kG-aVZpW-aVaAe-aVo6U-aVbGB-aVceF-aVZJd-aVZme-aVbTf-aVbZC-aVcme-aVf9h-aV4xT-aW1y6-aXjPf-aW39X-aVa9f-aXi9U-aXiAc-aXi15-aV4E8-aXn8K-aXjfN-aXmXu-aXj95-aV4JU-oqhobN-osjkGT-aXhRg-d7FZ8w-ad7aqE-hadzr-nzc2e-ad7PXj-ad7F8C-ad7iKY-ad4J94-ad79o9-ad4vzM-ad4nFZ-ad4Aqn-ad4CLv-ad4EGB-ad7mvo-ad7MkG",
+                    "id": 17,
+                    "has_upcoming_events": true,
+                    "image_license": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+            ],
+            "short_title": "Blue Jays at Rangers",
+            "time_tbd": false,
+            "stats": {
+                "lowest_price": 5,
+                "lowest_price_good_deals": 5,
+                "listing_count": 3606,
+                "average_price": 35,
+                "highest_price": 1359
+            },
+            "taxonomies": [
+                {
+                    "parent_id": null,
+                    "name": "sports",
+                    "id": 1000000
+                },
+                {
+                    "parent_id": 1000000,
+                    "name": "baseball",
+                    "id": 1010000
+                },
+                {
+                    "parent_id": 1010000,
+                    "name": "mlb",
+                    "id": 1010100
+                }
+            ],
+            "date_tbd": false,
+            "venue": {
+                "num_upcoming_events": 49,
+                "url": "https://seatgeek.com/venues/globe-life-park/tickets",
+                "state": "TX",
+                "address": "1000 Ballpark Way",
+                "postal_code": "76011",
+                "slug": "globe-life-park",
+                "location": {
+                    "lon": -97.0824,
+                    "lat": 32.7506
+                },
+                "name": "Globe Life Park",
+                "has_upcoming_events": true,
+                "timezone": "America/Chicago",
+                "name_v2": "Globe Life Park",
+                "country": "US",
+                "links": [],
+                "score": 0.856248,
+                "display_location": "Arlington, TX",
+                "city": "Arlington",
+                "extended_address": "Arlington, TX 76011",
+                "id": 16
+            },
+            "score": 0.740107,
+            "type": "mlb",
+            "id": 3592655,
+            "datetime_tbd": false,
+            "announce_date": "2016-11-07T00:00:00",
+            "is_open": false,
+            "links": [],
+            "visible_until_utc": "2017-06-22T22:05:00"
+        }
+    ],
+    "meta": {
+        "per_page": 10,
+        "took": 28,
+        "total": 139,
+        "page": 1,
+        "geolocation": null
+    },
+    "in_hand": {}
+}
