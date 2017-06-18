@@ -10,7 +10,7 @@ import Foundation
 
 struct EventParser: Parsable {
 	
-	func parse(jsonData: Data?) {
+    func parse(_ jsonData: [String: AnyObject]) {
 		
 	}
 	

@@ -26,30 +26,9 @@ class EventParserTests: XCTestCase {
     }
 	
 	func testEventParserParsesDataAndAddsThemToContext() {
-		let data = loadJSONSample()
-		parser.parse(jsonData: data)
+        if let data = loadJSONSample() {
+            parser.parse(data)
+        }        
 	}
 	
-}
-
-
-extension EventParserTests {
-	
-	func loadJSONSample() -> Data? {
-		
-		let bundle = Bundle(for: type(of: self))
-		guard let url = bundle.url(forResource: "sample", withExtension: "json") else {
-			XCTFail("Unable to load sample.json")
-			return nil
-		}
-		
-		do {
-			let data = try Data(contentsOf: url)
-			return data
-		} catch {
-			print("Error: \(error.localizedDescription)")
-		}
-		
-		return nil
-	}
 }

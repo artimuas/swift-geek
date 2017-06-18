@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Parsable {
-	func parse(jsonData: Data?)
+    func parse(_ jsonData: [String: AnyObject])
 }

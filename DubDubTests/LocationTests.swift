@@ -29,8 +29,16 @@ class LocationTests: XCTestCase {
         super.tearDown()
     }
 	
-	func testCanCreateLocationEntity() {
-		XCTAssertNotNil(location, "Should be able to instantiate a location entity from context")
-	}
-	
+    func testLocationCanParseLocationJSON() {
+        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [[String: AnyObject]],
+            let venueDict = eventsArray[0][EventKey.venue] as? [String: AnyObject],
+            let locationDict = venueDict[VenueKey.location] as? [String: AnyObject]
+            else { return }
+        
+        location.parse(locationDict)
+        
+        XCTAssertEqual(location.latitude, 32.7506, "Should parse and set the location's latitude")
+        XCTAssertEqual(location.longitude, -97.0824, "Should parse and set the location's latitude")
+    }
+    
 }

@@ -29,9 +29,21 @@ class EventTests: XCTestCase {
         super.tearDown()
     }
     
-	func testCanCreateEventEntity() {
-		XCTAssertNotNil(event, "Should be able to create a new managed object for Event entity")
-	}
-	
-	
+    func testEventCanParseEventJSON() {
+        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [[String: AnyObject]] 
+            else { return }
+        
+        if let eventDict = eventsArray.first {
+            event.parse(eventDict)
+        }
+        
+        XCTAssertEqual(event.identifier, 3592642, "Should parse the event id from JSON")
+        XCTAssertEqual(event.dateTimeLocal, DateFormatter.dateFrom(rfc3339String: "2017-06-16T19:05:00") as NSDate?, "Should parse the local event date from JSON")
+        XCTAssertEqual(event.dateTimeUTC, DateFormatter.dateFrom(rfc3339String: "2017-06-17T00:05:00") as NSDate?, "Should parse utc data from JSON")
+        XCTAssertEqual(event.imageURL?.absoluteString, "https://chairnerd.global.ssl.fastly.net/images/performers-landscape/seattle-mariners-46fcfb/13/huge.jpg", "Should parse the image url from JSON")
+        XCTAssertEqual(event.title, "Seattle Mariners at Texas Rangers", "Should parse the title from JSON")
+        XCTAssertEqual(event.type, "mlb", "Should parse the type from JSON")
+        XCTAssertEqual(event.url?.absoluteString, "https://seatgeek.com/mariners-at-rangers-tickets/6-16-2017-arlington-texas-globe-life-park/mlb/3592642", "Should parse the url from JSON")
+    }
+    
 }
