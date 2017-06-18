@@ -30,7 +30,7 @@ public class Event: NSManagedObject, Parsable {
         guard let identifier = jsonData[EventKey.identifier] as? Int,
             let title = jsonData[EventKey.title] as? String,
             let type = jsonData[EventKey.type] as? String,
-            let performers = jsonData[EventKey.performers] as? [[String: AnyObject]],
+            let performers = jsonData[EventKey.performers] as? [JSON],
             let imageURLString = performers[0][EventKey.imageURL] as? String
         else { return }
         
@@ -51,7 +51,7 @@ public class Event: NSManagedObject, Parsable {
             self.dateTimeLocal = DateFormatter.dateFrom(rfc3339String: dateTimeLocalString) as NSDate?
         }
         
-        if let venueDict = jsonData[EventKey.venue] as? [String: AnyObject], 
+        if let venueDict = jsonData[EventKey.venue] as? JSON,
             let context = self.managedObjectContext {
             
             let venue = NSEntityDescription.insertNewObject(forEntityName: "Venue", into: context) as? Venue

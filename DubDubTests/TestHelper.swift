@@ -11,7 +11,7 @@ import XCTest
 
 extension XCTestCase {
     
-    func loadJSONSample() -> [String: AnyObject]? {
+	func loadJSONSample() -> [String: AnyObject]? {
         
         let bundle = Bundle(for: type(of: self))
         guard let url = bundle.url(forResource: "sample", withExtension: "json") else {

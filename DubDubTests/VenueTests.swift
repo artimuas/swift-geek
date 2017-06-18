@@ -30,8 +30,8 @@ class VenueTests: XCTestCase {
     }
         
     func testVenueCanParseVenueJSON() {
-        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [[String: AnyObject]],
-            let venueDict = eventsArray[0][EventKey.venue] as? [String: AnyObject]
+        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [JSON],
+            let venueDict = eventsArray[0][EventKey.venue] as? JSON
             else { return }
         
         venue.parse(venueDict)
@@ -46,4 +46,15 @@ class VenueTests: XCTestCase {
         XCTAssertEqual(venue.url?.absoluteString, "https://seatgeek.com/venues/globe-life-park/tickets", "Should parse the url appropriately from the JSON")
         XCTAssertEqual(venue.displayLocation, "Arlington, TX", "Should parse the display location appropriately from the JSON")
     }
+	
+	func testVenueHasLocation() {
+		guard let eventsArray = loadJSONSample()?[EventKey.events] as? [JSON],
+			let venueDict = eventsArray[0][EventKey.venue] as? JSON
+			else { return }
+		
+		venue.parse(venueDict)
+		
+		XCTAssertNotNil(venue.location, "Should have a location")
+	}
+	
 }

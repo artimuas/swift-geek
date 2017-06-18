@@ -30,12 +30,12 @@ class CoreDataStack: NSObject {
 	
 }
 
-extension CoreDataStack {
-	func applicationDocumentsDirectory() {
-		// The directory the application uses to store the Core Data store file
-		if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
-			print(url.absoluteString)
-		}
-	}
-
-}
+//extension CoreDataStack {
+//	func applicationDocumentsDirectory() {
+//		// The directory the application uses to store the Core Data store file
+//		if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
+//			print(url.absoluteString)
+//		}
+//	}
+//
+//}

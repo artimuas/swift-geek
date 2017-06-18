@@ -30,9 +30,9 @@ class LocationTests: XCTestCase {
     }
 	
     func testLocationCanParseLocationJSON() {
-        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [[String: AnyObject]],
-            let venueDict = eventsArray[0][EventKey.venue] as? [String: AnyObject],
-            let locationDict = venueDict[VenueKey.location] as? [String: AnyObject]
+        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [JSON],
+            let venueDict = eventsArray[0][EventKey.venue] as? JSON,
+            let locationDict = venueDict[VenueKey.location] as? JSON
             else { return }
         
         location.parse(locationDict)

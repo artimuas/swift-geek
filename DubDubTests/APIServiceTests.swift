@@ -40,10 +40,9 @@ class APIServiceTests: XCTestCase {
 		})
 		
 		waitForExpectations(timeout: 10) { (error) in
-			if let err = error {
-				XCTFail("Expectation wait failed with error: \(err)")
-			}
+			XCTFail("Expectation wait failed with error")
 		}
+		
 	}
 	
 	func testServiceShouldSetPageToAPIManagerPage() {
@@ -57,17 +56,14 @@ class APIServiceTests: XCTestCase {
 		})
 		
 		waitForExpectations(timeout: 10) { (error) in
-			if let err = error {
-				XCTFail("Expectation wait failed with error: \(err)")
-			}
+			XCTFail("Expectation wait failed with error")
 		}
 	}
 
 	func testServiceReturnsErrorIfNoQueryPresent() {
 		service.getEventsFor(query: nil, onPage: 1) { (result) in
-			if case .failure(let error) = result {
-				XCTAssertNotNil(error, "Service should send an error if query is nil")
-				XCTAssertEqual(error.localizedDescription, "Invalid Query", "Service should send a appropriate error description")
+			if case .failure(let error) = result , case .invalidQuery(let invalid) = error {
+				XCTAssertEqual(invalid, "Invalid Query", "Service should send an error if query is nil")
 			}
 		}
 	}

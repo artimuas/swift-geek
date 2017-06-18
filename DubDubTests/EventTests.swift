@@ -30,7 +30,7 @@ class EventTests: XCTestCase {
     }
     
     func testEventCanParseEventJSON() {
-        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [[String: AnyObject]] 
+        guard let eventsArray = loadJSONSample()?[EventKey.events] as? [JSON] 
             else { return }
         
         if let eventDict = eventsArray.first {
@@ -45,5 +45,17 @@ class EventTests: XCTestCase {
         XCTAssertEqual(event.type, "mlb", "Should parse the type from JSON")
         XCTAssertEqual(event.url?.absoluteString, "https://seatgeek.com/mariners-at-rangers-tickets/6-16-2017-arlington-texas-globe-life-park/mlb/3592642", "Should parse the url from JSON")
     }
-    
+	
+	func testEventHasVenue() {
+		guard let eventsArray = loadJSONSample()?[EventKey.events] as? [JSON]
+			else { return }
+		
+		if let eventDict = eventsArray.first {
+			event.parse(eventDict)
+		}
+		
+		XCTAssertNotNil(event.venue, "Event should have a venue")
+		
+	}
+	
 }

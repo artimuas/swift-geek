@@ -48,7 +48,7 @@ public class Venue: NSManagedObject, Parsable {
         self.displayLocation = displayLocation
         self.url = NSURL(string: urlString)
         
-        if let locationDict = jsonData[VenueKey.location] as? [String: AnyObject],
+        if let locationDict = jsonData[VenueKey.location] as? JSON,
             let context = self.managedObjectContext {
             
             let location = NSEntityDescription.insertNewObject(forEntityName: "Location", into: context) as? Location
