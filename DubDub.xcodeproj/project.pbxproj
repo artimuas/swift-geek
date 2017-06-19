@@ -42,7 +42,7 @@
 		A67A0DD81EF1BBD50006A9D6 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */; };
 		A67A0DDA1EF1BCA30006A9D6 /* HeartButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */; };
 		A69623CA1EF4509B00A3869F /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = A69623C91EF4509B00A3869F /* sample.json */; };
-		A69623CC1EF454B800A3869F /* EventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69623CB1EF454B800A3869F /* EventParser.swift */; };
+		A69623CC1EF454B800A3869F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69623CB1EF454B800A3869F /* DataManager.swift */; };
 		A69623CE1EF454D800A3869F /* EventParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69623CD1EF454D800A3869F /* EventParserTests.swift */; };
 		A6BC54671EF5B796008284C9 /* Dictionary+APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC54661EF5B796008284C9 /* Dictionary+APIKeys.swift */; };
 		A6BC54691EF5C4AE008284C9 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC54681EF5C4AE008284C9 /* TestHelper.swift */; };
@@ -114,7 +114,7 @@
 		A67A0DD71EF1BBD50006A9D6 /* HeartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		A67A0DD91EF1BCA30006A9D6 /* HeartButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartButtonTests.swift; sourceTree = "<group>"; };
 		A69623C91EF4509B00A3869F /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
-		A69623CB1EF454B800A3869F /* EventParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = EventParser.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A69623CB1EF454B800A3869F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DataManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A69623CD1EF454D800A3869F /* EventParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventParserTests.swift; sourceTree = "<group>"; };
 		A6BC54661EF5B796008284C9 /* Dictionary+APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+APIKeys.swift"; sourceTree = "<group>"; };
 		A6BC54681EF5C4AE008284C9 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TestHelper.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -286,7 +286,7 @@
 		A67A0DDB1EF1BDA10006A9D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A69623CB1EF454B800A3869F /* EventParser.swift */,
+				A69623CB1EF454B800A3869F /* DataManager.swift */,
 				A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */,
 				A60DB6E41EF1D6D300959010 /* Model */,
 				A60DB6E31EF1D6CD00959010 /* Stack */,
@@ -479,7 +479,7 @@
 				A601081B1EF628F30052E942 /* DateFormatter+Additions.swift in Sources */,
 				A60DBCFD1EF36BF80004D33E /* Array+Additions.swift in Sources */,
 				A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */,
-				A69623CC1EF454B800A3869F /* EventParser.swift in Sources */,
+				A69623CC1EF454B800A3869F /* DataManager.swift in Sources */,
 				A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */,
 				A619113D1EF4758000DF7BBB /* Parsable.swift in Sources */,
 				A65A59531EE72BEB00E29643 /* AppDelegate.swift in Sources */,

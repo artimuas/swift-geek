@@ -11,7 +11,7 @@ import Foundation
 public typealias JSON = [String: AnyObject]
 
 enum Result {
-    case success([AnyObject])
+    case success(Any)
     case failure(APIError)
 }
 
@@ -65,11 +65,11 @@ class APIService {
 					do {
 						if let jsonData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? JSON {
 							DispatchQueue.global(qos: .background).async {
-								let dataParser = EventParser()
-								dataParser.parse(jsonData)
+								let dataManager = DataManager()
+								dataManager.parse(jsonData)
 							}
                             
-                            completion(.success(Array()))    
+                            completion(.success(httpResponse))
 						}
 					} catch let err {
 						completion(.failure(.jsonError(err.localizedDescription)))

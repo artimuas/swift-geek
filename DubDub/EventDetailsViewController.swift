@@ -10,6 +10,11 @@ import UIKit
 
 class EventDetailsViewController: UIViewController {
 
+	@IBOutlet weak var headerImageView: UIImageView!
+	@IBOutlet weak var timeLabel: UILabel!
+	@IBOutlet weak var cityLabel: UILabel!
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 

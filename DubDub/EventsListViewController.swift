@@ -48,17 +48,17 @@ class EventsListViewController: UITableViewController {
 // MARK: Table View Data Source
 
 extension EventsListViewController {
+	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier) as? EventTableViewCell {
-            
-            if let event = fetchedResultsController.object(at: indexPath) as? Event {
-                cell.configureCellWith(event: event)
-            }
-            
-            return cell
-		}
 		
-		return EventTableViewCell()
+		let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier, for: indexPath) as! EventTableViewCell
+		
+		if let event = fetchedResultsController.object(at: indexPath) as? Event {
+			cell.configureCellWith(event: event)
+		}
+
+		return cell
+
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,7 +81,11 @@ extension EventsListViewController {
 
 extension EventsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
+		
+		let _ = fetchedResultsController.object(at: indexPath)
+		
+		performSegue(withIdentifier: "ShowEventDetailsSegue", sender: self)
     }
 }
 
