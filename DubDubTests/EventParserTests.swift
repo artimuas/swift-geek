@@ -24,11 +24,5 @@ class EventParserTests: XCTestCase {
 		
         super.tearDown()
     }
-	
-	func testEventParserParsesDataAndAddsThemToContext() {
-        if let data = loadJSONSample() {
-            parser.parse(data)
-        }        
-	}
-	
+		
 }

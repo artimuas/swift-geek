@@ -18,7 +18,7 @@ class EventTests: XCTestCase {
     override func setUp() {
         super.setUp()
 		
-		context = CoreDataStack.sharedInstance.persistentContainer?.viewContext
+		context = CoreDataStack.sharedInstance.persistentContainer.viewContext
 		event = NSEntityDescription.insertNewObject(forEntityName: "Event", into: context) as? Event
     }
     

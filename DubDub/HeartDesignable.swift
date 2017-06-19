@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc
 public protocol HeartDesignable: Designable {
 	var fillColor: UIColor { get set }
 }

@@ -26,5 +26,21 @@ import QuartzCore
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-	
+    
+    override func draw(_ rect: CGRect) {
+        headerImageView?.layer.masksToBounds = true
+        headerImageView?.layer.cornerRadius = 10
+    }
+
+    func configureCellWith(event: Event) {
+        self.titleLabel?.text = event.title
+        
+        if let dateTimeLocal = event.dateTimeLocal as Date? {
+            self.timeLabel?.text = DateFormatter.dateTimeStringFrom(date: dateTimeLocal)
+        }
+        
+        if let venue = event.venue {
+            self.locationLabel?.text = "\(venue.city ?? "City"), \(venue.state ?? "St")"
+        }
+    }
 }

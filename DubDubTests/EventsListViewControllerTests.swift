@@ -11,7 +11,7 @@ import XCTest
 
 class EventsListViewControllerTests: XCTestCase {
 	
-	var eventsListViewController: EventsListViewController!
+	var viewController: EventsListViewController!
 	var searchController: UISearchController!
     
     override func setUp() {
@@ -22,23 +22,23 @@ class EventsListViewControllerTests: XCTestCase {
 			bundle: Bundle(for: EventsListViewController.self)
 		)
 		
-		eventsListViewController = storyboard.instantiateViewController(
+		viewController = storyboard.instantiateViewController(
 			withIdentifier: "EventsListViewController"
 			) as? EventsListViewController
 		
-		let _ = eventsListViewController.loadViewIfNeeded()
+		let _ = viewController.loadViewIfNeeded()
 				
-		searchController = eventsListViewController.searchController
+		searchController = viewController.searchController
     }
     
     override func tearDown() {
-		eventsListViewController = nil
+		viewController = nil
 		
         super.tearDown()
     }
 	
 	func testCanCreateEventsListViewcontroller() {
-		XCTAssertNotNil(eventsListViewController, "Should be able to instantiate a EventsListViewcontroller from Main storyboard")
+		XCTAssertNotNil(viewController, "Should be able to instantiate a EventsListViewcontroller from Main storyboard")
 	}
 	
 	
@@ -60,11 +60,18 @@ class EventsListViewControllerTests: XCTestCase {
 	}
 	
 	func testControllerSetsSearchBarAsTableViewHeader() {
-		guard let headerView = eventsListViewController.tableView.tableHeaderView
+		guard let headerView = viewController.tableView.tableHeaderView
 			else {
 				return XCTFail("EventsViewController should set the table header view")
 		}
 		
 		XCTAssertEqual(headerView, searchController.searchBar, "Table's header view should be the search bar")
 	}
+    
+    func testViewModelHasEventsFetchResultsController() {
+        let frc = viewController.fetchedResultsController
+        XCTAssertEqual(frc.fetchRequest.entityName, "Event", "View model should have a fetchResultsController on the Event entity")
+        XCTAssertEqual(frc.delegate as? EventsListViewController, viewController, "View model should be the fetch results controller delegate")
+    }
+
 }

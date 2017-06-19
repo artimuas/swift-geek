@@ -15,7 +15,7 @@ class CoreDataStack: NSObject {
 	
 	private override init() {}
 	
-	lazy var persistentContainer: NSPersistentContainer? = {
+	lazy var persistentContainer: NSPersistentContainer = {
 		let container = NSPersistentContainer(name: "DubDub")
 		
 		container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -28,14 +28,18 @@ class CoreDataStack: NSObject {
 		return container
 	}()
 	
-}
+    func saveContext () {
+        
+        let context = persistentContainer.viewContext
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
 
-//extension CoreDataStack {
-//	func applicationDocumentsDirectory() {
-//		// The directory the application uses to store the Core Data store file
-//		if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
-//			print(url.absoluteString)
-//		}
-//	}
-//
-//}
+}

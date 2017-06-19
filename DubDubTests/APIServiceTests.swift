@@ -34,13 +34,16 @@ class APIServiceTests: XCTestCase {
 		
 		
 		service.getEventsFor(query: "abc", onPage: 1, completion: { (result) in
+            print("APIManager query string:\(String(describing: APIManager.query))")
 			XCTAssertEqual(APIManager.query, "abc", "Service should set the query string on APIManager's query property")
 			
 			exp.fulfill()
 		})
 		
 		waitForExpectations(timeout: 10) { (error) in
-			XCTFail("Expectation wait failed with error")
+            if let error = error {
+                XCTFail("Expectation wait failed with error: \(error.localizedDescription))")
+            }
 		}
 		
 	}
@@ -56,7 +59,9 @@ class APIServiceTests: XCTestCase {
 		})
 		
 		waitForExpectations(timeout: 10) { (error) in
-			XCTFail("Expectation wait failed with error")
+            if let error = error {
+                XCTFail("Expectation wait failed with error: \(error.localizedDescription))")
+            }
 		}
 	}
 
@@ -69,7 +74,11 @@ class APIServiceTests: XCTestCase {
 	}
 
 	func testServiceReturnsSuccessIfDataTaskSucceeds() {
-		
+        service.getEventsFor(query: nil, onPage: 1) { (result) in
+            if case .success(let data) = result {
+                XCTAssertNotNil(data, "Service should return a successful response to called")
+            }
+        }
 	}
 	
 }

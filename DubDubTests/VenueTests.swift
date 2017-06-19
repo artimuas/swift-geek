@@ -18,7 +18,7 @@ class VenueTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        context = CoreDataStack.sharedInstance.persistentContainer?.viewContext
+        context = CoreDataStack.sharedInstance.persistentContainer.viewContext
         venue = NSEntityDescription.insertNewObject(forEntityName: "Venue", into: context) as? Venue
     }
     

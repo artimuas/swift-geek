@@ -18,7 +18,7 @@ class LocationTests: XCTestCase {
     override func setUp() {
         super.setUp()
 		
-		context = CoreDataStack.sharedInstance.persistentContainer?.viewContext
+		context = CoreDataStack.sharedInstance.persistentContainer.viewContext
 		location = NSEntityDescription.insertNewObject(forEntityName: "Location", into: context) as? Location
     }
     

@@ -48,6 +48,9 @@ class APIService {
         }
         
         let request = URLRequest(url: uri)
+        
+        cancelAllPreviousTasks()
+        
         let task = session.dataTask(with: request) { (data, response, error) in
 			
 			guard let httpResponse = response as? HTTPURLResponse else {
@@ -65,6 +68,8 @@ class APIService {
 								let dataParser = EventParser()
 								dataParser.parse(jsonData)
 							}
+                            
+                            completion(.success(Array()))    
 						}
 					} catch let err {
 						completion(.failure(.jsonError(err.localizedDescription)))
@@ -72,11 +77,15 @@ class APIService {
 				} else {
 					completion(.failure(.invalidData("Invalid data received")))
 				}
-				
-				completion(.success(Array()))
 			}
         }
         
         task.resume()
+    }
+    
+    private func cancelAllPreviousTasks() {
+        session.getAllTasks { (tasks) in
+            _ = tasks.map{$0.cancel()}
+        }
     }
 }
