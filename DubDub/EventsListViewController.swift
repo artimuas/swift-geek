@@ -9,14 +9,16 @@
 import UIKit
 import CoreData
 
-class EventsListViewController: UITableViewController, UISearchControllerDelegate {
+class EventsListViewController: UITableViewController, UITheme {
 	
 	fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
 	
 	fileprivate lazy var service = APIService()
 
 	var searchController: UISearchController?
-    
+
+	var themeColor = UIColor(red: (25/255), green: (53/255), blue: (111/255), alpha: 0.75)
+	
 	lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "dateTimeLocal", ascending: true)]
@@ -27,24 +29,31 @@ class EventsListViewController: UITableViewController, UISearchControllerDelegat
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
 		setupSearchController()
 		
 		let nib = UINib(nibName: EventTableViewCell.identifier, bundle: Bundle(for: EventsListViewController.self))
 		tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
-		
-		navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
+		tableView.tableFooterView = UIView()
 		
         loadData()
+		
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		configureUI()
+	}
 	
 	private func setupSearchController() {
 		searchController = UISearchController(searchResultsController: nil) //passing nil sets current viewcontroller as the results controller
 		searchController?.delegate = self
 		searchController?.searchResultsUpdater = self
-		searchController?.searchBar.placeholder = "Search for your favorite teams"
+		searchController?.dimsBackgroundDuringPresentation = false
 		searchController?.hidesNavigationBarDuringPresentation = false
-		searchController?.searchBar.tintColor = UIColor(red: (25/255), green: (53/255), blue: (111/255), alpha: 0.75)
+		searchController?.searchBar.searchBarStyle = .minimal
+		searchController?.searchBar.placeholder = "Search for your favorite teams"
 		
 		navigationItem.titleView = searchController?.searchBar
 	}
@@ -71,7 +80,30 @@ class EventsListViewController: UITableViewController, UISearchControllerDelegat
 	fileprivate func displayError(_ error: Error) {
 		let alertController = UIAlertController(title: "Error occured", message: error.localizedDescription, preferredStyle: .alert)
 		alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-		present(alertController, animated: true, completion: nil)
+		
+		DispatchQueue.main.async {
+			if let visibleController = UIApplication.shared.keyWindow?.visibleViewController {
+				if let _ = visibleController as? UIAlertController {
+					print("showing an alert already")
+				} else {
+					visibleController.present(alertController, animated: true, completion: nil)
+				}
+			}
+		}
+	}
+	
+	private func configureUI() {
+		// Appearance
+		
+		navigationController?.navigationBar.barTintColor = themeColor
+		
+		searchController?.searchBar.tintColor = UIColor.white
+		searchController?.searchBar.barTintColor = themeColor
+		let searchField = searchController?.searchBar.value(forKey: "searchField") as? UITextField
+		searchField?.textColor = UIColor.white
+		
+		// Backbutton
+		navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)		
 	}
 	
 }
@@ -132,6 +164,29 @@ extension EventsListViewController {
 			fetchMoreEvents()
 		}
 	}
+	
+	override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+		
+		guard let event = self.fetchedResultsController.object(at: indexPath) as? Event else { return nil }
+
+		let favoriteAction = UITableViewRowAction(style: .normal, title: (event.favorite ? "Unfavorite" : "Favorite")) { (action, indexPath) in
+			event.favorite = !(event.favorite)
+		}
+		
+		favoriteAction.backgroundEffect = UIBlurEffect(style: .prominent)
+		
+		if event.favorite == true {
+			favoriteAction.backgroundColor = UIColor(red: (255/255), green: (110/255), blue: (87/255), alpha: 1.0)
+		} else {
+			favoriteAction.backgroundColor = UIColor(white: 0.5, alpha: 1)
+		}
+		
+		return [favoriteAction]
+	}
+	
+	override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+		return true
+	}
 }
 
 // MARK: Fetched Results Controller Delegate
@@ -181,6 +236,16 @@ extension EventsListViewController: NSFetchedResultsControllerDelegate {
     }
     
 }
+
+// MARK: Search Controller Delegate
+
+extension EventsListViewController: UISearchControllerDelegate {
+	
+	func didDismissSearchController(_ searchController: UISearchController) {
+		print("Search controller dismissed")
+	}
+}
+
 
 // MARK: Search Results Updating
 

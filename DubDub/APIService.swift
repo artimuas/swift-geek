@@ -54,9 +54,11 @@ class APIService {
         let task = session.dataTask(with: request) { (data, response, error) in
 			
 			guard let httpResponse = response as? HTTPURLResponse else {
-				if let err = error {
+				if let err = error as NSError? {
 					print(err.localizedDescription)
-					completion(.failure(err))
+					if err.code != (-999) {
+						completion(.failure(err))
+					}
 				}
 				return
 			}
@@ -92,4 +94,4 @@ class APIService {
 	func getEventsOnNextPage(completion: @escaping (Result) -> Void){
 		getEventsFor(query: APIManager.query, onPage: APIManager.page + 1, completion: completion)
 	}
-	}
+}

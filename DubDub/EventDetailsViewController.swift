@@ -20,6 +20,8 @@ class EventDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         updateView()
+		
+		navigationController?.navigationBar.barTintColor = UIColor.white
     }
     
     override func viewWillLayoutSubviews() {
@@ -27,6 +29,7 @@ class EventDetailsViewController: UIViewController {
         
         headerImageView.layer.masksToBounds = true
         headerImageView.layer.cornerRadius = 10
+		
     }
 
     override func didReceiveMemoryWarning() {
