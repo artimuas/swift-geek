@@ -67,8 +67,8 @@ class APIServiceTests: XCTestCase {
 
 	func testServiceReturnsErrorIfNoQueryPresent() {
 		service.getEventsFor(query: nil) { (result) in
-			if case .failure(let error) = result , case .invalidQuery(let invalid) = error {
-				XCTAssertEqual(invalid, "Invalid Query", "Service should send an error if query is nil")
+			if case .failure(let error) = result {
+				XCTAssertEqual(error.localizedDescription, "Invalid Query", "Service should send an error if query is nil")
 			}
 		}
 	}

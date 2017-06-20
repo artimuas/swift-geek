@@ -68,6 +68,12 @@ class EventsListViewController: UITableViewController, UISearchControllerDelegat
         }
     }
 	
+	fileprivate func displayError(_ error: Error) {
+		let alertController = UIAlertController(title: "Error occured", message: error.localizedDescription, preferredStyle: .alert)
+		alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+		present(alertController, animated: true, completion: nil)
+	}
+	
 }
 
 // MARK: Table View Data Source
@@ -217,8 +223,10 @@ extension EventsListViewController {
 		switch result {
 		case .success(let response):
 			print(response)
+		//No need to do anything since FRC will take care of updating the table
 		case .failure(let error):
 			print(error.localizedDescription)
+			displayError(error)
 		}
 	}
 }

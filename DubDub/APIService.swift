@@ -12,15 +12,7 @@ public typealias JSON = [String: AnyObject]
 
 enum Result {
     case success(Any)
-    case failure(APIError)
-}
-
-enum APIError: Error {
-	case requestFailed(String)
-	case invalidData(String)
-	case invalidQuery(String)
-	case invalidURL(String)
-	case jsonError(String)
+    case failure(Error)
 }
 
 class APIService {
@@ -40,7 +32,8 @@ class APIService {
     private func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result) -> Void) {
         
         guard let queryString = query else {
-            completion(.failure(.invalidQuery("Invalid Query")))
+			let error = NSError(domain: APIService.errorDomain, code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid Query"])
+            completion(.failure(error))
             return
         }
         
@@ -49,7 +42,8 @@ class APIService {
         let url = APIManager.eventsURL
         
         guard let uri = url else {
-			completion(.failure(.invalidURL("Invalid URL")))
+			let error = NSError(domain: APIService.errorDomain, code: 404, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])
+			completion(.failure(error))
             return
         }
         
@@ -62,7 +56,7 @@ class APIService {
 			guard let httpResponse = response as? HTTPURLResponse else {
 				if let err = error {
 					print(err.localizedDescription)
-					completion(.failure(.requestFailed(err.localizedDescription)))
+					completion(.failure(err))
 				}
 				return
 			}
@@ -78,11 +72,12 @@ class APIService {
                             
                             completion(.success(httpResponse))
 						}
-					} catch let err {
-						completion(.failure(.jsonError(err.localizedDescription)))
+					} catch {
+						completion(.failure(error))
 					}
 				} else {
-					completion(.failure(.invalidData("Invalid data received")))
+					let error = NSError(domain: APIService.errorDomain, code: 400, userInfo: [NSLocalizedDescriptionKey: "Invalid data received"])
+					completion(.failure(error))
 				}
 			}
         }
