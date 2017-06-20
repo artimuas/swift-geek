@@ -30,8 +30,8 @@ class APIService {
     private let session: URLSession = {
         return URLSession(configuration: .default)
     }()
-    
-    func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result) -> Void) {
+	    
+    private func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result) -> Void) {
         
         guard let queryString = query else {
             completion(.failure(.invalidQuery("Invalid Query")))
@@ -55,6 +55,7 @@ class APIService {
 			
 			guard let httpResponse = response as? HTTPURLResponse else {
 				if let err = error {
+					print(err.localizedDescription)
 					completion(.failure(.requestFailed(err.localizedDescription)))
 				}
 				return
@@ -82,7 +83,15 @@ class APIService {
         
         task.resume()
     }
-    
+	
+	func getEventsFor(query: String, completion: @escaping (Result) -> Void) {
+		getEventsFor(query: query, onPage: 1, completion: completion)
+	}
+	
+	func getEventsOnNextPage(completion: @escaping (Result) -> Void){
+		getEventsFor(query: APIManager.query, onPage: APIManager.page + 1, completion: completion)
+	}
+	
     private func cancelAllPreviousTasks() {
         session.getAllTasks { (tasks) in
             _ = tasks.map{$0.cancel()}

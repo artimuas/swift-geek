@@ -15,30 +15,31 @@ struct EventsManager: Parsable {
 
         guard let eventsArray = jsonData[EventKey.events] as? [JSON]
             else { return }
-        let container = CoreDataStack.sharedInstance.persistentContainer
-        
-        container.performBackgroundTask({ context in
-            
-            for eventDict in eventsArray {
-                
-                if let id = eventDict["id"] as? Int {
-                    self.findEventWithId(id, completion: { (event) in
-                        if let event = event {
-                            self.updateEvent(event, withDictionary: eventDict)
-                        } else {
-                            self.createNewEvent(fromDictionary: eventDict)
-                        }
-                    })
-                }
-            }
-            
-            DataManager.saveData()
-        })
-        
+		
+		let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
+		
+		context.perform {
+			for eventDict in eventsArray {
+				
+				if let id = eventDict["id"] as? Int {
+					self.findEventWithId(id, completion: { (event) in
+						if let event = event {
+							self.updateEvent(event, withDictionary: eventDict)
+						} else {
+							self.createNewEvent(fromDictionary: eventDict)
+						}
+					})
+				}
+			}
+			
+			DataManager.saveData()
+
+		}
+		
     }
  
     private func findEventWithId(_ id: Int, completion: (Event?) -> Void) {
-        
+		
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
         fetchRequest.predicate = NSPredicate(format: "%K == %d", "identifier", id)
         do {

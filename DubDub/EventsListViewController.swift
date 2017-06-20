@@ -9,23 +9,22 @@
 import UIKit
 import CoreData
 
-class EventsListViewController: UITableViewController {
+class EventsListViewController: UITableViewController, UISearchControllerDelegate {
 	
 	fileprivate var searchController: UISearchController?
     
     fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
-    
+	
+	fileprivate lazy var service = APIService()
+	
     fileprivate lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "dateTimeLocal", ascending: true)]
-//        fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, (self.searchController?.searchBar.text)!)
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
         frc.delegate = self
         return frc
     }()
-    
-    fileprivate lazy var service = APIService()
-
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,7 +32,9 @@ class EventsListViewController: UITableViewController {
 		
 		let nib = UINib(nibName: EventTableViewCell.identifier, bundle: Bundle(for: EventsListViewController.self))
 		tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
-        
+		
+		navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
+		
         loadData()
     }
 	
@@ -42,7 +43,10 @@ class EventsListViewController: UITableViewController {
 		searchController?.delegate = self
 		searchController?.searchResultsUpdater = self
 		searchController?.searchBar.placeholder = "Search for your favorite teams"
-		tableView?.tableHeaderView = searchController?.searchBar
+		searchController?.hidesNavigationBarDuringPresentation = false
+		searchController?.searchBar.tintColor = UIColor(red: (25/255), green: (53/255), blue: (111/255), alpha: 0.75)
+		
+		navigationItem.titleView = searchController?.searchBar
 	}
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,7 +59,10 @@ class EventsListViewController: UITableViewController {
     fileprivate func loadData() {
         do {
             try fetchedResultsController.performFetch()
-//            print((fetchedResultsController.fetchedObjects?.count)!)
+			print("Events count:\((fetchedResultsController.fetchedObjects?.count)!)")
+			DispatchQueue.main.async {
+				self.tableView.reloadData()
+			}
         } catch let error  {
             print("Error while performing CoreData fetch: \(error.localizedDescription)")
         }
@@ -112,7 +119,7 @@ extension EventsListViewController {
 extension EventsListViewController: NSFetchedResultsControllerDelegate {
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-//        tableView.beginUpdates()
+        tableView.beginUpdates()
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
@@ -150,15 +157,10 @@ extension EventsListViewController: NSFetchedResultsControllerDelegate {
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.reloadData()
+        tableView.endUpdates()
     }
     
 }
-
-// MARK: Search Controller Delegate
-
-extension EventsListViewController: UISearchControllerDelegate {}
-
 
 // MARK: Search Results Updating
 
@@ -166,20 +168,19 @@ extension EventsListViewController: UISearchResultsUpdating {
     
 	func updateSearchResults(for searchController: UISearchController) {
 
-        loadData()
-
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
             updateFetchRequestWith(searchText)
             
-            service.getEventsFor(query: searchText, onPage: 1) { (result) in
+            service.getEventsFor(query: searchText) { (result) in
                 print(result)
             }
         }
                     	
+		loadData()
     }
     
     func updateFetchRequestWith(_ query: String?) {
         let fetchRequest = fetchedResultsController.fetchRequest
-        fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, query ?? "") 
+        fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, query ?? "")
     }
 }
