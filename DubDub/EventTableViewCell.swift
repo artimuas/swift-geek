@@ -13,11 +13,11 @@ import QuartzCore
 	
 	static let identifier = "EventTableViewCell"
 	
-	@IBOutlet weak var headerImageView: UIImageView?
-	@IBOutlet weak var favoriteImageView: HeartImageView?
-	@IBOutlet weak var titleLabel: UILabel?
-	@IBOutlet weak var locationLabel: UILabel?
-	@IBOutlet weak var timeLabel: UILabel?
+	@IBOutlet weak var headerImageView: UIImageView!
+	@IBOutlet weak var favoriteImageView: HeartImageView!
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var locationLabel: UILabel!
+	@IBOutlet weak var timeLabel: UILabel!
 	
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,19 +28,21 @@ import QuartzCore
     }
     
     override func draw(_ rect: CGRect) {
-        headerImageView?.layer.masksToBounds = true
-        headerImageView?.layer.cornerRadius = 10
+        headerImageView.layer.masksToBounds = true
+        headerImageView.layer.cornerRadius = 10
     }
 
     func configureCellWith(event: Event) {
-        self.titleLabel?.text = event.title
+        titleLabel.text = event.title
         
         if let dateTimeLocal = event.dateTimeLocal as Date? {
-            self.timeLabel?.text = DateFormatter.dateTimeStringFrom(date: dateTimeLocal)
+            timeLabel.text = DateFormatter.dateTimeStringFrom(date: dateTimeLocal)
         }
         
         if let venue = event.venue {
-            self.locationLabel?.text = "\(venue.city ?? "City"), \(venue.state ?? "St")"
+            locationLabel.text = "\(venue.city ?? "City"), \(venue.state ?? "St")"
         }
+        
+        favoriteImageView.isHidden = !event.favorite
     }
 }

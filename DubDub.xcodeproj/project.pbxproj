@@ -31,6 +31,7 @@
 		A65A59581EE72BEB00E29643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65A59561EE72BEB00E29643 /* Main.storyboard */; };
 		A65A595B1EE72BEB00E29643 /* DubDub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */; };
 		A65A59601EE72BEB00E29643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65A595E1EE72BEB00E29643 /* LaunchScreen.storyboard */; };
+		A65D74A81EF87D1900BC1102 /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D74A71EF87D1900BC1102 /* EventsManager.swift */; };
 		A67834CF1EF0638900B4D06C /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67834CD1EF0638900B4D06C /* EventTableViewCell.swift */; };
 		A67834D01EF0638A00B4D06C /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67834CE1EF0638900B4D06C /* EventTableViewCell.xib */; };
 		A67A0DCB1EF18F1C0006A9D6 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A0DCA1EF18F1C0006A9D6 /* Designable.swift */; };
@@ -103,6 +104,7 @@
 		A65A596C1EE72BEB00E29643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65A59711EE72BEB00E29643 /* DubDubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DubDubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65A59771EE72BEB00E29643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65D74A71EF87D1900BC1102 /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		A67834CD1EF0638900B4D06C /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A67834CE1EF0638900B4D06C /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		A67A0DCA1EF18F1C0006A9D6 /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
@@ -252,6 +254,15 @@
 			path = DubDubUITests;
 			sourceTree = "<group>";
 		};
+		A65D74A91EF87D2600BC1102 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A69623CB1EF454B800A3869F /* DataManager.swift */,
+				A65D74A71EF87D1900BC1102 /* EventsManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		A67834CC1EF0636700B4D06C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +297,8 @@
 		A67A0DDB1EF1BDA10006A9D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A69623CB1EF454B800A3869F /* DataManager.swift */,
 				A65A59591EE72BEB00E29643 /* DubDub.xcdatamodeld */,
+				A65D74A91EF87D2600BC1102 /* Managers */,
 				A60DB6E41EF1D6D300959010 /* Model */,
 				A60DB6E31EF1D6CD00959010 /* Stack */,
 			);
@@ -481,6 +492,7 @@
 				A60DB6DF1EF1D5B500959010 /* Location+CoreDataClass.swift in Sources */,
 				A69623CC1EF454B800A3869F /* DataManager.swift in Sources */,
 				A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */,
+				A65D74A81EF87D1900BC1102 /* EventsManager.swift in Sources */,
 				A619113D1EF4758000DF7BBB /* Parsable.swift in Sources */,
 				A65A59531EE72BEB00E29643 /* AppDelegate.swift in Sources */,
 				A6E8327A1EF73690001CDC0A /* EventsListViewModel.swift in Sources */,

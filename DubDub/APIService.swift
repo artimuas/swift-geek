@@ -66,7 +66,7 @@ class APIService {
 						if let jsonData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? JSON {
 							DispatchQueue.global(qos: .background).async {
 								let dataManager = DataManager()
-								dataManager.parse(jsonData)
+								dataManager.processJSON(jsonData)
 							}
                             
                             completion(.success(httpResponse))

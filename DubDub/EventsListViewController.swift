@@ -11,20 +11,20 @@ import CoreData
 
 class EventsListViewController: UITableViewController {
 	
-	var searchController: UISearchController?
+	fileprivate var searchController: UISearchController?
     
-    let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
+    fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
     
-    lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
+    fileprivate lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "dateTimeLocal", ascending: true)]
-        fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, (self.searchController?.searchBar.text)!)
+//        fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, (self.searchController?.searchBar.text)!)
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
         frc.delegate = self
         return frc
     }()
     
-    lazy var service = APIService()
+    fileprivate lazy var service = APIService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,16 +33,34 @@ class EventsListViewController: UITableViewController {
 		
 		let nib = UINib(nibName: EventTableViewCell.identifier, bundle: Bundle(for: EventsListViewController.self))
 		tableView.register(nib, forCellReuseIdentifier: EventTableViewCell.identifier)
+        
+        loadData()
     }
 	
-	func setupSearchController() {
+	private func setupSearchController() {
 		searchController = UISearchController(searchResultsController: nil) //passing nil sets current viewcontroller as the results controller
 		searchController?.delegate = self
 		searchController?.searchResultsUpdater = self
 		searchController?.searchBar.placeholder = "Search for your favorite teams"
 		tableView?.tableHeaderView = searchController?.searchBar
 	}
-	
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowEventDetailsSegue", let event = sender as? Event {
+            let detailsViewController = segue.destination as! EventDetailsViewController
+            detailsViewController.event = event
+        }
+    }
+    
+    fileprivate func loadData() {
+        do {
+            try fetchedResultsController.performFetch()
+//            print((fetchedResultsController.fetchedObjects?.count)!)
+        } catch let error  {
+            print("Error while performing CoreData fetch: \(error.localizedDescription)")
+        }
+    }
+    
 }
 
 // MARK: Table View Data Source
@@ -83,9 +101,9 @@ extension EventsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 		
-		let _ = fetchedResultsController.object(at: indexPath)
+		let selectedEvent = fetchedResultsController.object(at: indexPath)
 		
-		performSegue(withIdentifier: "ShowEventDetailsSegue", sender: self)
+		performSegue(withIdentifier: "ShowEventDetailsSegue", sender: selectedEvent)
     }
 }
 
@@ -94,7 +112,7 @@ extension EventsListViewController {
 extension EventsListViewController: NSFetchedResultsControllerDelegate {
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.beginUpdates()
+//        tableView.beginUpdates()
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
@@ -132,7 +150,7 @@ extension EventsListViewController: NSFetchedResultsControllerDelegate {
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.endUpdates()
+        tableView.reloadData()
     }
     
 }
@@ -147,12 +165,9 @@ extension EventsListViewController: UISearchControllerDelegate {}
 extension EventsListViewController: UISearchResultsUpdating {
     
 	func updateSearchResults(for searchController: UISearchController) {
-        do {
-            try fetchedResultsController.performFetch()
-        } catch let error  {
-            print("Error while performing fetch: \(error.localizedDescription)")
-        }
-            
+
+        loadData()
+
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
             updateFetchRequestWith(searchText)
             
@@ -160,7 +175,8 @@ extension EventsListViewController: UISearchResultsUpdating {
                 print(result)
             }
         }
-	}
+                    	
+    }
     
     func updateFetchRequestWith(_ query: String?) {
         let fetchRequest = fetchedResultsController.fetchRequest
