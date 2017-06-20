@@ -33,12 +33,12 @@ class APIServiceTests: XCTestCase {
 		let exp = expectation(description: "Service sends the getEvents request")
 		
 		
-		service.getEventsFor(query: "abc", onPage: 1, completion: { (result) in
+		service.getEventsFor(query: "abc") { (result) in
             print("APIManager query string:\(String(describing: APIManager.query))")
 			XCTAssertEqual(APIManager.query, "abc", "Service should set the query string on APIManager's query property")
 			
 			exp.fulfill()
-		})
+		}
 		
 		waitForExpectations(timeout: 10) { (error) in
             if let error = error {
@@ -52,7 +52,7 @@ class APIServiceTests: XCTestCase {
 		let exp = expectation(description: "Service sends the getEvents request")
 		
 		
-		service.getEventsFor(query: "abc", onPage: 1, completion: { (result) in
+		service.getEventsFor(query: "abc", completion: { (result) in
 			XCTAssertEqual(APIManager.page, 1, "Service should set the page on APIManager's page property")
 			
 			exp.fulfill()
@@ -66,7 +66,7 @@ class APIServiceTests: XCTestCase {
 	}
 
 	func testServiceReturnsErrorIfNoQueryPresent() {
-		service.getEventsFor(query: nil, onPage: 1) { (result) in
+		service.getEventsFor(query: nil) { (result) in
 			if case .failure(let error) = result , case .invalidQuery(let invalid) = error {
 				XCTAssertEqual(invalid, "Invalid Query", "Service should send an error if query is nil")
 			}
@@ -74,7 +74,7 @@ class APIServiceTests: XCTestCase {
 	}
 
 	func testServiceReturnsSuccessIfDataTaskSucceeds() {
-        service.getEventsFor(query: nil, onPage: 1) { (result) in
+        service.getEventsFor(query: "texas") { (result) in
             if case .success(let data) = result {
                 XCTAssertNotNil(data, "Service should return a successful response to called")
             }

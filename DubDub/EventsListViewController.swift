@@ -11,13 +11,13 @@ import CoreData
 
 class EventsListViewController: UITableViewController, UISearchControllerDelegate {
 	
-	fileprivate var searchController: UISearchController?
-    
-    fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
+	fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
 	
 	fileprivate lazy var service = APIService()
-	
-    fileprivate lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
+
+	var searchController: UISearchController?
+    
+	lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "dateTimeLocal", ascending: true)]
         let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
@@ -67,7 +67,7 @@ class EventsListViewController: UITableViewController, UISearchControllerDelegat
             print("Error while performing CoreData fetch: \(error.localizedDescription)")
         }
     }
-    
+	
 }
 
 // MARK: Table View Data Source
@@ -98,6 +98,12 @@ extension EventsListViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+		
+		if let event = fetchedResultsController.object(at: indexPath) as? Event,
+			let cell = tableView.cellForRow(at: indexPath) as? EventTableViewCell {
+			return cell.heightFor(event: event)
+		}
+		
 		return 115
 	}
 }
@@ -105,6 +111,7 @@ extension EventsListViewController {
 // MARK: Table View Delegate
 
 extension EventsListViewController {
+	
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 		
@@ -112,6 +119,13 @@ extension EventsListViewController {
 		
 		performSegue(withIdentifier: "ShowEventDetailsSegue", sender: selectedEvent)
     }
+
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		
+		if let count = fetchedResultsController.fetchedObjects?.count, indexPath.row == count - 2 { //Looking ahead
+			fetchMoreEvents()
+		}
+	}
 }
 
 // MARK: Fetched Results Controller Delegate
@@ -170,10 +184,8 @@ extension EventsListViewController: UISearchResultsUpdating {
 
         if let searchText = searchController.searchBar.text, !searchText.isEmpty {
             updateFetchRequestWith(searchText)
-            
-            service.getEventsFor(query: searchText) { (result) in
-                print(result)
-            }
+			
+			fetchEventsFor(query: searchText)
         }
                     	
 		loadData()
@@ -183,4 +195,30 @@ extension EventsListViewController: UISearchResultsUpdating {
         let fetchRequest = fetchedResultsController.fetchRequest
         fetchRequest.predicate = NSPredicate(format: "%K CONTAINS[cd] %@", EventKey.title, query ?? "")
     }
+}
+
+// MARK: API Service
+
+extension EventsListViewController {
+
+	fileprivate func fetchMoreEvents() {
+		service.getEventsOnNextPage { (result) in
+			self.processAPIResponse(result)
+		}
+	}
+	
+	fileprivate func fetchEventsFor(query: String) {
+		service.getEventsFor(query: query) { (result) in
+			self.processAPIResponse(result)
+		}
+	}
+	
+	func processAPIResponse(_ result: Result) {
+		switch result {
+		case .success(let response):
+			print(response)
+		case .failure(let error):
+			print(error.localizedDescription)
+		}
+	}
 }

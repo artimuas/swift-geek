@@ -30,7 +30,13 @@ class APIService {
     private let session: URLSession = {
         return URLSession(configuration: .default)
     }()
-	    
+	
+	private func cancelAllPreviousTasks() {
+		session.getAllTasks { (tasks) in
+			_ = tasks.map{$0.cancel()}
+		}
+	}
+	
     private func getEventsFor(query: String?, onPage page: Int, completion: @escaping (Result) -> Void) {
         
         guard let queryString = query else {
@@ -84,17 +90,11 @@ class APIService {
         task.resume()
     }
 	
-	func getEventsFor(query: String, completion: @escaping (Result) -> Void) {
+	func getEventsFor(query: String?, completion: @escaping (Result) -> Void) {
 		getEventsFor(query: query, onPage: 1, completion: completion)
 	}
 	
 	func getEventsOnNextPage(completion: @escaping (Result) -> Void){
 		getEventsFor(query: APIManager.query, onPage: APIManager.page + 1, completion: completion)
 	}
-	
-    private func cancelAllPreviousTasks() {
-        session.getAllTasks { (tasks) in
-            _ = tasks.map{$0.cancel()}
-        }
-    }
-}
+	}

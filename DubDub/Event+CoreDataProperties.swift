@@ -20,7 +20,6 @@ extension Event {
     @NSManaged public var dateTimeUTC: NSDate?
     @NSManaged public var favorite: Bool
     @NSManaged public var identifier: Int
-    @NSManaged public var image: NSData?
     @NSManaged public var imageURL: NSURL?
     @NSManaged public var title: String?
     @NSManaged public var type: String?

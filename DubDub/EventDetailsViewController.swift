@@ -10,9 +10,9 @@ import UIKit
 
 class EventDetailsViewController: UIViewController {
 
-	@IBOutlet weak var headerImageView: UIImageView!
-	@IBOutlet weak var timeLabel: UILabel!
-	@IBOutlet weak var cityLabel: UILabel!
+	@IBOutlet weak private var headerImageView: UIImageView!
+	@IBOutlet weak private var timeLabel: UILabel!
+	@IBOutlet weak private var cityLabel: UILabel!
     
     var event: Event?
 	
@@ -34,6 +34,12 @@ class EventDetailsViewController: UIViewController {
     }
     
     fileprivate func updateView() {
+		title = event?.title
+		
+		if let url = event?.imageURL as URL? {
+			headerImageView.loadImageFrom(url: url, placeHolderImage: nil)
+		}
+		
         if let dateTimeLocal = event?.dateTimeLocal as Date? {
             self.timeLabel.text = DateFormatter.dateTimeStringFrom(date: dateTimeLocal)
         }
