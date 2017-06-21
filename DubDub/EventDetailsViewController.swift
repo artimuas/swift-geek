@@ -32,6 +32,9 @@ class EventDetailsViewController: UIViewController {
         headerImageView.layer.cornerRadius = 10
 		
         navigationItem.leftItemsSupplementBackButton = true
+        navigationController?.navigationBar.clipsToBounds = false
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
 
     override func didReceiveMemoryWarning() {

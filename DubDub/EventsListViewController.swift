@@ -93,7 +93,10 @@ class EventsListViewController: UITableViewController {
 	private func configureUI() {
 		// Appearance
 		
-		navigationController?.navigationBar.barTintColor = UIColor.themeColor
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.shadowImage = nil
+        navigationController?.navigationBar.barTintColor = UIColor.themeColor
+        
 		
 		searchController?.searchBar.tintColor = UIColor.white
 		searchController?.searchBar.barTintColor = UIColor.themeColor

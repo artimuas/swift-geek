@@ -25,6 +25,8 @@ import QuartzCore
 
 		headerImageView.layer.masksToBounds = true
 		headerImageView.layer.cornerRadius = 10
+        
+        self.separatorInset = UIEdgeInsets.zero
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
