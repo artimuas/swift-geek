@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G16b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cVK-gD-VMy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cVK-gD-VMy">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,6 +56,27 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rrD-u7-OM5">
+                        <barButtonItem key="leftBarButtonItem" id="Zvg-ba-akf">
+                            <view key="customView" contentMode="scaleToFill" id="GyZ-Ac-fNA">
+                                <rect key="frame" x="20" y="-8" width="200" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-2m-sN2">
+                                        <rect key="frame" x="0.0" y="18" width="200" height="26.333333333333336"/>
+                                        <color key="tintColor" red="1" green="0.43122080010000002" blue="0.33953297690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dYM-2m-sN2" firstAttribute="leading" secondItem="GyZ-Ac-fNA" secondAttribute="leading" id="BII-jq-WJk"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYM-2m-sN2" secondAttribute="trailing" id="H34-p3-WRo"/>
+                                    <constraint firstItem="dYM-2m-sN2" firstAttribute="centerY" secondItem="GyZ-Ac-fNA" secondAttribute="centerY" id="Yaf-JU-CKS"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Heart" style="done" id="WNx-lJ-aRO">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -67,6 +88,7 @@
                         <outlet property="cityLabel" destination="dkK-Lj-lIf" id="gN4-qz-U55"/>
                         <outlet property="headerImageView" destination="L7H-fl-Uh4" id="5NY-Nt-EQs"/>
                         <outlet property="timeLabel" destination="29Q-TY-1Kc" id="t7c-wg-VZK"/>
+                        <outlet property="titleLabel" destination="dYM-2m-sN2" id="Tpt-K5-UAT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgB-f8-fEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,7 +100,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cVK-gD-VMy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tLm-tx-CzM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tLm-tx-CzM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

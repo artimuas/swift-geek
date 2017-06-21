@@ -14,6 +14,7 @@ public protocol HeartDesignable: Designable {
 }
 
 public extension HeartDesignable where Self: UIView {
+    
 	func drawHeart() {
 		layer.sublayers?
 			.forEach { $0.removeFromSuperlayer()

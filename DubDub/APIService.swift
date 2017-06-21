@@ -19,6 +19,8 @@ class APIService {
     
     private static let errorDomain = "com.dubdub.apiservice.error"
     
+    private var ignoredErrors = Array<Int>()
+    
     private let session: URLSession = {
         return URLSession(configuration: .default)
     }()
@@ -94,4 +96,14 @@ class APIService {
 	func getEventsOnNextPage(completion: @escaping (Result) -> Void){
 		getEventsFor(query: APIManager.query, onPage: APIManager.page + 1, completion: completion)
 	}
+    
+    func ignoreErrorWithCode(_ errorCode: Int?) {
+        if let code = errorCode {
+            ignoredErrors.append(code)
+        }
+    }
+    
+    func acceptAllErrors() {
+        ignoredErrors.removeAll()
+    }
 }

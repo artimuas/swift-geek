@@ -59,8 +59,8 @@ class EventsListViewControllerTests: XCTestCase {
 		
 	}
 	
-	func testControllerSetsSearchBarAsTableViewHeader() {
-		guard let headerView = viewController.tableView.tableHeaderView
+	func testControllerSetsSearchBarAsNavigationBarTitleView() {
+		guard let headerView = viewController.navigationItem.titleView
 			else {
 				return XCTFail("EventsViewController should set the table header view")
 		}

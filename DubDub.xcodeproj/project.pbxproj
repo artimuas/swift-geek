@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A601081B1EF628F30052E942 /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601081A1EF628F30052E942 /* DateFormatter+Additions.swift */; };
+		A6042CB41EF9E70C00D85552 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6042CB31EF9E70C00D85552 /* UIColor+Theme.swift */; };
 		A60DB6D91EF1D5B500959010 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D11EF1D5B500959010 /* Event+CoreDataClass.swift */; };
 		A60DB6DA1EF1D5B500959010 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D21EF1D5B500959010 /* Event+CoreDataProperties.swift */; };
 		A60DB6DB1EF1D5B500959010 /* Venue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DB6D31EF1D5B500959010 /* Venue+CoreDataClass.swift */; };
@@ -52,7 +53,6 @@
 		A6F844C61EF0D60200829E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F844C51EF0D60200829E14 /* Assets.xcassets */; };
 		A6F844C81EF0DB5A00829E14 /* EventTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */; };
 		A6FBC09B1EF988370058F83B /* UIWindow+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBC09A1EF988370058F83B /* UIWindow+Additions.swift */; };
-		A6FBC09D1EF9AD130058F83B /* UITheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FBC09C1EF9AD130058F83B /* UITheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		A601081A1EF628F30052E942 /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
+		A6042CB31EF9E70C00D85552 /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		A60DB6D11EF1D5B500959010 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A60DB6D21EF1D5B500959010 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A60DB6D31EF1D5B500959010 /* Venue+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Venue+CoreDataClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -125,7 +126,6 @@
 		A6F844C51EF0D60200829E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F844C71EF0DB5A00829E14 /* EventTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCellTests.swift; sourceTree = "<group>"; };
 		A6FBC09A1EF988370058F83B /* UIWindow+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Additions.swift"; sourceTree = "<group>"; };
-		A6FBC09C1EF9AD130058F83B /* UITheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,7 +276,6 @@
 				A67A0DCA1EF18F1C0006A9D6 /* Designable.swift */,
 				A67A0DD01EF196BF0006A9D6 /* HeartDesignable.swift */,
 				A619113C1EF4758000DF7BBB /* Parsable.swift */,
-				A6FBC09C1EF9AD130058F83B /* UITheme.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -290,6 +289,7 @@
 				A67A0DD31EF199BB0006A9D6 /* UIBezierPath+Heart.swift */,
 				A646A3661EF9066F00BD6EC8 /* UIImageView+Load.swift */,
 				A6FBC09A1EF988370058F83B /* UIWindow+Additions.swift */,
+				A6042CB31EF9E70C00D85552 /* UIColor+Theme.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -472,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6042CB41EF9E70C00D85552 /* UIColor+Theme.swift in Sources */,
 				A64AEA0E1EE9C26C000DF931 /* EventDetailsViewController.swift in Sources */,
 				A67A0DCD1EF18FFD0006A9D6 /* HeartImageView.swift in Sources */,
 				A646A3671EF9066F00BD6EC8 /* UIImageView+Load.swift in Sources */,
@@ -493,7 +494,6 @@
 				A60DB6E01EF1D5B500959010 /* Location+CoreDataProperties.swift in Sources */,
 				A67A0DD81EF1BBD50006A9D6 /* HeartButton.swift in Sources */,
 				A67834CF1EF0638900B4D06C /* EventTableViewCell.swift in Sources */,
-				A6FBC09D1EF9AD130058F83B /* UITheme.swift in Sources */,
 				A60DB6E61EF1D6F500959010 /* CoreDataStack.swift in Sources */,
 				A60DB6DC1EF1D5B500959010 /* Venue+CoreDataProperties.swift in Sources */,
 				A6FBC09B1EF988370058F83B /* UIWindow+Additions.swift in Sources */,

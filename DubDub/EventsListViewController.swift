@@ -9,15 +9,13 @@
 import UIKit
 import CoreData
 
-class EventsListViewController: UITableViewController, UITheme {
+class EventsListViewController: UITableViewController {
 	
 	fileprivate let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
 	
 	fileprivate lazy var service = APIService()
 
 	var searchController: UISearchController?
-
-	var themeColor = UIColor(red: (25/255), green: (53/255), blue: (111/255), alpha: 0.75)
 	
 	lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Event.self))
@@ -95,10 +93,10 @@ class EventsListViewController: UITableViewController, UITheme {
 	private func configureUI() {
 		// Appearance
 		
-		navigationController?.navigationBar.barTintColor = themeColor
+		navigationController?.navigationBar.barTintColor = UIColor.themeColor
 		
 		searchController?.searchBar.tintColor = UIColor.white
-		searchController?.searchBar.barTintColor = themeColor
+		searchController?.searchBar.barTintColor = UIColor.themeColor
 		let searchField = searchController?.searchBar.value(forKey: "searchField") as? UITextField
 		searchField?.textColor = UIColor.white
 		
@@ -153,7 +151,7 @@ extension EventsListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 		
-		let selectedEvent = fetchedResultsController.object(at: indexPath)
+		let selectedEvent = fetchedResultsController.object(at: indexPath) as? Event
 		
 		performSegue(withIdentifier: "ShowEventDetailsSegue", sender: selectedEvent)
     }

@@ -13,6 +13,7 @@ class EventDetailsViewController: UIViewController {
 	@IBOutlet weak private var headerImageView: UIImageView!
 	@IBOutlet weak private var timeLabel: UILabel!
 	@IBOutlet weak private var cityLabel: UILabel!
+    @IBOutlet weak private var titleLabel: UILabel!
     
     var event: Event?
 	
@@ -30,6 +31,7 @@ class EventDetailsViewController: UIViewController {
         headerImageView.layer.masksToBounds = true
         headerImageView.layer.cornerRadius = 10
 		
+        navigationItem.leftItemsSupplementBackButton = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +39,10 @@ class EventDetailsViewController: UIViewController {
     }
     
     fileprivate func updateView() {
-		title = event?.title
-		
+        if let title = event?.title {
+            titleLabel.text = title
+        }
+        
 		if let url = event?.imageURL as URL? {
 			headerImageView.loadImageFrom(url: url, placeHolderImage: nil)
 		}
@@ -56,7 +60,7 @@ class EventDetailsViewController: UIViewController {
     
     fileprivate func updateFavoriteButton() {
         if event?.favorite == true {
-            navigationItem.rightBarButtonItem?.tintColor = UIColor(red: (255/255), green: (110/255), blue: (87/255), alpha: 1.0)
+            navigationItem.rightBarButtonItem?.tintColor = UIColor.heartColor
         } else {
             navigationItem.rightBarButtonItem?.tintColor = UIColor(white: 0.5, alpha: 1)
         }
@@ -69,4 +73,5 @@ class EventDetailsViewController: UIViewController {
         
         updateFavoriteButton()
     }
+    
 }
