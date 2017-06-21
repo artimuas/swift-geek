@@ -30,7 +30,7 @@
                         </constraints>
                     </imageView>
                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-Zf-hqL" customClass="HeartImageView" customModule="DubDub" customModuleProvider="target">
-                        <rect key="frame" x="8" y="10.5" width="25" height="24"/>
+                        <rect key="frame" x="8" y="16" width="25" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="25" id="ciF-R4-NtG"/>
                             <constraint firstAttribute="width" secondItem="xyr-Zf-hqL" secondAttribute="height" multiplier="1:0.95" id="lmW-ZT-xZ9"/>
@@ -75,7 +75,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xyr-Zf-hqL" firstAttribute="centerY" secondItem="X9U-zv-3RO" secondAttribute="top" id="13i-db-EaG"/>
+                    <constraint firstItem="xyr-Zf-hqL" firstAttribute="centerY" secondItem="X9U-zv-3RO" secondAttribute="top" constant="5" id="13i-db-EaG"/>
                     <constraint firstItem="BCi-iL-0kj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JLb-Ov-Gkm"/>
                     <constraint firstItem="X9U-zv-3RO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jii-jj-JnV"/>
                     <constraint firstItem="BCi-iL-0kj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KZv-KP-nlZ"/>
